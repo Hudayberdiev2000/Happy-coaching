@@ -2,23 +2,110 @@
   "name": "vacant",
   "version": "0.1.0",
   "private": true,
+  "description": "A Next.js application for managing restaurant vacancies, with Storybook, Husky, and linting tools.",
+  "author": {
+    "name": "Zaman Hudayberdiev",
+    "email": "zaman.akmyradovic@gmail.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vacant"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/vacant/issues"
+  },
+  "contributors": [
+    {
+      "name": "Contributor One",
+      "email": "contributor1@example.com"
+    },
+    {
+      "name": "Contributor Two",
+      "email": "contributor2@example.com"
+    }
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
+    "lint:styles": "stylelint '**/*.{css,scss}'",
+    "lint:styles:fix": "stylelint '**/*.{css,scss}' --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "prepare": "husky install",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "commit": "cz",
+    "commit:lint": "commitlint --from=HEAD~1",
+    "check-updates": "npx npm-check-updates",
+    "lint:all": "npm run lint && npm run lint:styles && npm run format:fix",
+    "lint:fix:all": "npm run lint:fix && npm run lint:styles:fix npm run ",
+    "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
+    "next": "14.2.11",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.11"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@chromatic-com/storybook": "^1.9.0",
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "@storybook/addon-essentials": "^8.3.1",
+    "@storybook/addon-interactions": "^8.3.1",
+    "@storybook/addon-links": "^8.3.1",
+    "@storybook/addon-onboarding": "^8.3.1",
+    "@storybook/blocks": "^8.3.1",
+    "@storybook/nextjs": "^8.3.1",
+    "@storybook/react": "^8.3.1",
+    "@storybook/test": "^8.3.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.11"
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.11",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.36.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-storybook": "^0.8.0",
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "sass": "^1.78.0",
+    "storybook": "^8.3.1",
+    "stylelint": "^16.9.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.6.0",
+    "stylelint-selector-bem-pattern": "^4.0.1",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "keywords": [
+    "nextjs",
+    "typescript",
+    "storybook",
+    "eslint",
+    "prettier",
+    "restaurant",
+    "husky",
+    "vacant-management"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }

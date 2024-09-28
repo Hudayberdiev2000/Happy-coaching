@@ -46,6 +46,7 @@
     "changelog": "npx conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "next": "14.2.11",
     "react": "^18",
     "react-dom": "^18"

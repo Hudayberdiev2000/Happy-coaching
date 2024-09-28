@@ -21,3 +21,9 @@ $button-color: var(--button-color, $white) !default;
 $button-bg-color: var(--button-bg-color, $green) !default;
 $button-hover-color: var(--button-hover-color, $blue-gray) !default;
 $button-hover-bg-color: var(--button-hover-bg-color, $green-tint) !default;
+
+/* =============================================
+=                 Logo                         =
+============================================= */
+$logo-icon-bg: var(--logo-icon-bg, $green) !default;
+$logo-color: var(--logo-color, $purple) !default;

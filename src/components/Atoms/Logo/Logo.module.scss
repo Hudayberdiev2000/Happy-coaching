@@ -1,0 +1,48 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.logo {
+  align-items: center;
+  display: flex;
+  gap: map.get($spacing, 'xs');
+
+  &__left {
+    padding-left: 9.96px;
+  }
+
+  &__hexagon {
+    background-color: $logo-icon-bg;
+    border-radius: 2.3px / 1.15px;
+    height: 23px;
+    position: relative;
+    width: 13.34px;
+    @include center-flex;
+    @include center-flex;
+  }
+
+  &__hexagon:before,
+  &__hexagon:after {
+    background-color: inherit;
+    border-radius: inherit;
+    content: '';
+    height: inherit;
+    position: absolute;
+    width: inherit;
+  }
+
+  &__hexagon:before {
+    transform: rotate(60deg);
+    z-index: -10;
+  }
+
+  &__hexagon:after {
+    transform: rotate(-60deg);
+    z-index: -11;
+  }
+
+  &__right {
+    color: $logo-color;
+    font-size: $fs-sm;
+    font-weight: $fw-bold;
+  }
+}

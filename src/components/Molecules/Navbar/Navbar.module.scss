@@ -1,0 +1,18 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.navbar {
+  display: flex;
+  gap: map.get($spacing, 'lg');
+
+  &__nav-list {
+    display: flex;
+    gap: 3rem;
+  }
+
+  &__nav-link {
+    color: $navbar-link-color;
+    font-size: $fs-sm;
+    text-decoration: none;
+  }
+}

@@ -27,3 +27,8 @@ $button-hover-bg-color: var(--button-hover-bg-color, $green-tint) !default;
 ============================================= */
 $logo-icon-bg: var(--logo-icon-bg, $green) !default;
 $logo-color: var(--logo-color, $purple) !default;
+
+/* =============================================
+=                 Navbar                       =
+============================================= */
+$navbar-link-color: var(--navbar-link-color, $blue-gray);

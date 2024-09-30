@@ -1,0 +1,22 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.success-rate {
+  gap: map.get($spacing, 'md');
+  height: 10.4rem;
+  width: 23.7rem;
+  @include center-flex;
+
+  &__percentage {
+    color: $success-rate-percentage-color;
+    font-size: $fs-xl;
+    font-weight: $fw-black;
+    letter-spacing: -3;
+    @include margin('bottom', 'xs');
+  }
+
+  &__description {
+    color: $success-rate-description-color;
+    font-size: $fs-xxs;
+  }
+}

@@ -1,0 +1,20 @@
+@import '../../../foundation/sass/all';
+
+.nav-item {
+  align-items: center;
+  display: flex;
+  height: 6rem;
+  transition: all 300ms ease;
+
+  &--active,
+  &:hover,
+  &:active {
+    box-shadow: inset 0 -2px 0 0 $navbar-item-border-color;
+  }
+}
+
+.nav-link {
+  color: $navbar-item-color;
+  font-size: $fs-sm;
+  text-decoration: none;
+}

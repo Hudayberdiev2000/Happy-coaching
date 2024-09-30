@@ -1,0 +1,22 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.header {
+  &__container {
+    align-items: center;
+    display: flex;
+    height: 6rem;
+    justify-content: space-between;
+  }
+
+  &__logo-link {
+    border: none;
+    text-decoration: none;
+  }
+
+  &__navbar-wrapper {
+    align-items: center;
+    display: flex;
+    gap: map.get($spacing, 'md');
+  }
+}

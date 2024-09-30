@@ -29,6 +29,7 @@ $logo-icon-bg: var(--logo-icon-bg, $green) !default;
 $logo-color: var(--logo-color, $purple) !default;
 
 /* =============================================
-=                 Navbar                       =
+=                 NavbarItem                       =
 ============================================= */
-$navbar-link-color: var(--navbar-link-color, $blue-gray);
+$navbar-item-color: var(--navbar-link-color, $blue-gray);
+$navbar-item-border-color: var(--navbar-border-color, $green) !default;

@@ -2,6 +2,7 @@
 @import '../../../foundation/sass/all';
 
 .success-rate {
+  background-color: $success-rate-bg-color;
   gap: map.get($spacing, 'md');
   height: 10.4rem;
   width: 23.7rem;

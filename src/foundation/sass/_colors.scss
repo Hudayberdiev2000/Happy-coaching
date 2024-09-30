@@ -45,3 +45,12 @@ $success-rate-description-color: var(
   --success-rate-description-color,
   $blue-gray
 ) !default;
+$success-rate-bg-color: var(--success-rate-bg-color, $white) !default;
+
+/* =============================================
+=                 Hero                     =
+============================================= */
+$hero-bg-color: var(--hero-bg-color, $white-floral) !default;
+$hero-subheading-color: var(--hero-subheading-color, $blue-gray-50) !default;
+$hero-heading-color: var(--hero-heading-color, $purple) !default;
+$hero-text-color: var(--hero-bg-color, $blue-gray) !default;

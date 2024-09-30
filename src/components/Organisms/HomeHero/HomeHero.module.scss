@@ -1,0 +1,71 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.home-hero {
+  background-color: $hero-bg-color;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 66.7rem;
+    position: relative;
+  }
+
+  &__wave-icon {
+    position: absolute;
+    top: map.get($spacing, 'xl');
+    transform: translate(-50%, 0);
+  }
+
+  &__info-box {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, 'sm');
+    @include padding('right', 'xl');
+  }
+
+  &__subheading {
+    color: $hero-subheading-color;
+    font-size: $fs-sm;
+    letter-spacing: -2%;
+  }
+
+  &__heading {
+    color: $hero-heading-color;
+    font-size: $h-1-font-size;
+    font-weight: $h-1-font-weight;
+    letter-spacing: -1%;
+    line-height: 8.64rem;
+  }
+
+  &__text {
+    color: $hero-text-color;
+    font-size: $fs-sm;
+    line-height: 2.88rem;
+  }
+
+  &__img-box {
+    align-items: end;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img-wrapper {
+    height: 60.3rem;
+    position: relative;
+    transform: translate(0, 2.6rem);
+    width: 46.2rem;
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__success-rate {
+    position: absolute;
+    transform: translate(-11.6rem, -4.5rem);
+  }
+}

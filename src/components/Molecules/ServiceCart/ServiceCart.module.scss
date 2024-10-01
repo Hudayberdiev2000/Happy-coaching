@@ -1,0 +1,37 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.service-cart {
+  height: 32.8rem;
+  padding: map.get($spacing, 'lg');
+  width: 38rem;
+
+  &--with-border {
+    border: 1px solid $service-cart-border-color;
+  }
+
+  &__icon-wrapper {
+    height: 7.2rem;
+    width: 7.2rem;
+    @include margin('bottom', 'xl');
+  }
+
+  &__icon {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: $h-4-font-size;
+    font-weight: $h-4-font-weight;
+    letter-spacing: -3%;
+    @include margin('bottom', 'md');
+  }
+
+  &__description {
+    color: $service-cart-color;
+    font-size: $fs-sm;
+    letter-spacing: -2%;
+    line-height: 2.4rem;
+  }
+}

@@ -3,7 +3,7 @@ import SuccessRate from './SuccessRate';
 export const Default = {};
 
 const successRateConfig = {
-  title: 'Molecules/SuccessRate',
+  title: 'Atoms/SuccessRate',
   component: SuccessRate,
   tags: ['autodocs'],
   excludeStories: /.*Data$/,

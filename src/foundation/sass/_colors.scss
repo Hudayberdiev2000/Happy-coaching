@@ -54,3 +54,12 @@ $hero-bg-color: var(--hero-bg-color, $white-floral) !default;
 $hero-subheading-color: var(--hero-subheading-color, $blue-gray-50) !default;
 $hero-heading-color: var(--hero-heading-color, $purple) !default;
 $hero-text-color: var(--hero-bg-color, $blue-gray) !default;
+
+/* =============================================
+=                 ServiceCart                  =
+============================================= */
+$service-cart-color: var(--service-cart-color, $blue-gray) !default;
+$service-cart-border-color: var(
+  --service-cart-border-color,
+  $white-floral
+) !default;

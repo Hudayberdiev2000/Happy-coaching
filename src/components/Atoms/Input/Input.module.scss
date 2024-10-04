@@ -1,0 +1,17 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.input {
+  border: 1px solid $input-border-color;
+  border-radius: $br-sm;
+  font-size: $fs-sm;
+  letter-spacing: -1;
+  outline: none;
+  padding: map.get($spacing, 'xs') map.get($spacing, 'sm');
+  transition: border-color 200ms ease;
+  width: 20.4rem;
+
+  &:focus {
+    border-color: $input-hover-border-color;
+  }
+}

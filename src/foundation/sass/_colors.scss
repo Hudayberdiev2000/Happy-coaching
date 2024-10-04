@@ -109,3 +109,15 @@ $blog-card-description-color: var(
   --blog-card-description-color,
   $blue-gray
 ) !default;
+
+/* =============================================
+=                 Input                        =
+============================================= */
+$input-border-color: var(--input-border-color, $blue-gray-50) !default;
+$input-hover-border-color: var(--input-hover-border-color, $blue) !default;
+
+/* =============================================
+=                 FooterCta                    =
+============================================= */
+$footer-cta-color: var(--footer-cta-color, $blue-gray) !default;
+$footer-cta-bg-color: var(--footer-cta-bg-color, $white-floral) !default;

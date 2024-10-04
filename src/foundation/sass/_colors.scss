@@ -67,3 +67,16 @@ $service-cart-heading-hover-color: var(
   --service-cart-heading-hover-color,
   $green
 ) !default;
+
+/* =============================================
+=                 Introduction                 =
+============================================= */
+$introduction-bg-color: var(--introduction-bg-color, $white-floral) !default;
+$introduction-heading-color: var(
+  --introduction-heading-color,
+  $purple
+) !default;
+$introduction-paragraph-color: var(
+  --introduction-paragraph-color,
+  $blue-gray
+) !default;

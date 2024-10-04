@@ -4,19 +4,17 @@ import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
 import Image from 'next/image';
 import Button from '@/components/Atoms/Button';
 import SuccessRate from '@/components/Atoms/SuccessRate';
+import WaveIcon from '@/components/Atoms/WaveIcon';
 
 const HomeHero: React.FC = () => {
   return (
     <section className={styles['home-hero']}>
       <MainContainer>
         <div className={styles['home-hero__container']}>
-          <Image
-            className={styles['home-hero__wave-icon']}
-            src={'/icons/wave-icon.svg'}
-            width={101}
-            height={17}
-            alt="wave icon"
-          />
+          <div className={styles['home-hero__wave-icon']}>
+            <WaveIcon />
+          </div>
+
           <div className={styles['home-hero__info-box']}>
             <p className={styles['home-hero__subheading']}>
               Proven strategies backed by science for success.

@@ -94,3 +94,13 @@ $review-card-border-color: var(
 ============================================= */
 $home-review-heading-color: var(--home-review-heading-color, $purple) !default;
 $home-review-bg-color: var(--home-review-bg-color, $white-floral) !default;
+
+/* =============================================
+=                 BlogCard                     =
+============================================= */
+$blog-card-border-color: var(--blog-card-border-color, $white-floral) !default;
+$blog-card-title-color: var(--blog-card-title-color, $purple) !default;
+$blog-card-description-color: var(
+  --blog-card-description-color,
+  $blue-gray
+) !default;

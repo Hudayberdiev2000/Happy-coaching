@@ -1,0 +1,38 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.blog-card {
+  border: 1px solid $blog-card-border-color;
+  height: 37.6rem;
+  width: 36rem;
+
+  &__img-wrapper {
+    height: 15.6rem;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__info-box {
+    margin: map.get($spacing, 'md');
+  }
+
+  &__title {
+    color: $blog-card-title-color;
+    font-size: $fs-xl;
+    font-weight: $fw-bold;
+    letter-spacing: -3%;
+    line-height: 3.2rem;
+    @include margin('bottom', 'xs');
+  }
+
+  &__description {
+    color: $blog-card-description-color;
+    font-size: $fs-sm;
+    letter-spacing: -2%;
+    line-height: 2.4rem;
+  }
+}

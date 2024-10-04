@@ -88,3 +88,9 @@ $review-card-border-color: var(
   --review-card-border-color,
   $white-smoke
 ) !default;
+
+/* =============================================
+=                 HomeReview                   =
+============================================= */
+$home-review-heading-color: var(--home-review-heading-color, $purple) !default;
+$home-review-bg-color: var(--home-review-bg-color, $white-floral) !default;

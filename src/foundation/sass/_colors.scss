@@ -80,3 +80,11 @@ $introduction-paragraph-color: var(
   --introduction-paragraph-color,
   $blue-gray
 ) !default;
+
+/* =============================================
+=                 ReviewCard                   =
+============================================= */
+$review-card-border-color: var(
+  --review-card-border-color,
+  $white-smoke
+) !default;

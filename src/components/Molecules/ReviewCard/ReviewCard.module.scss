@@ -1,0 +1,44 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.review-card {
+  border: 1px solid $review-card-border-color;
+  display: flex;
+  flex-direction: column;
+  gap: map.get($spacing, 'sm');
+  height: 39.1rem;
+  margin: 50px;
+  padding: map.get($spacing, 'xl');
+  transition: all 0.5s ease;
+  width: 40rem;
+
+  &__comment {
+    font-size: $fs-xl;
+    letter-spacing: -3%;
+    line-height: 3.4rem;
+  }
+
+  &__commenter-name {
+    font-size: $fs-xl;
+    font-weight: $fw-bold;
+    letter-spacing: -3%;
+  }
+
+  &__img-wrapper {
+    height: 7rem;
+    width: 7rem;
+  }
+
+  &__img {
+    border-radius: 50%;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &:hover {
+    border-color: transparent;
+    box-shadow: 0 0 5px rgb(0 0 0 / 9.9%);
+    cursor: pointer;
+  }
+}

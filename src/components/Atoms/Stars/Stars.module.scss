@@ -1,0 +1,7 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.stars {
+  display: flex;
+  gap: map.get($spacing, 'xxxs');
+}

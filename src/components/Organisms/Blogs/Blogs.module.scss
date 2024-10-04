@@ -1,0 +1,28 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.blogs {
+  align-items: center;
+  display: flex;
+  height: 84rem;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, 'xl');
+  }
+
+  &__heading {
+    color: $heading-color;
+    font-size: $h-2-font-size;
+    font-weight: $h-2-font-weight;
+    text-align: center;
+    width: 68rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: map.get($spacing, 'lg');
+  }
+}

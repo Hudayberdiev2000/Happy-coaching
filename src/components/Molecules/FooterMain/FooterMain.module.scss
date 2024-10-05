@@ -1,0 +1,48 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.footer-main {
+  &__container {
+    color: $footer-main-color;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__about {
+    display: flex;
+    flex-direction: column;
+    font-size: $fs-sm;
+    gap: map.get($spacing, 'lg');
+    line-height: 2.4rem;
+    width: 80%;
+  }
+
+  &__info-div {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, 'md');
+  }
+
+  &__div-heading {
+    font-size: $fs-sm;
+    font-weight: $fw-extrabold;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    font-size: $fs-sm;
+    gap: map.get($spacing, 'sm');
+  }
+
+  &__link {
+    color: $footer-main-color;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $footer-main-link-hover-color;
+      text-decoration: underline;
+    }
+  }
+}

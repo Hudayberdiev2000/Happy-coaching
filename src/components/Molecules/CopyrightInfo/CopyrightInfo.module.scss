@@ -1,0 +1,19 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.copyright-info {
+  &__container {
+    align-items: center;
+    border-top: 1px solid $copyright-border-color;
+    color: $copyright-color;
+    display: flex;
+    font-size: $fs-xxs;
+    justify-content: space-between;
+    @include padding('top', 'lg');
+  }
+
+  &__icons {
+    display: flex;
+    gap: map.get($spacing, 'md');
+  }
+}

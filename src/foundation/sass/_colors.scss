@@ -121,3 +121,19 @@ $input-hover-border-color: var(--input-hover-border-color, $blue) !default;
 ============================================= */
 $footer-cta-color: var(--footer-cta-color, $blue-gray) !default;
 $footer-cta-bg-color: var(--footer-cta-bg-color, $white-floral) !default;
+
+/* =============================================
+=                 FooterMain                   =
+============================================= */
+
+$footer-main-color: var(--footer-main-color, $blue-gray-50) !default;
+$footer-main-link-hover-color: var(
+  --footer-main-link-hover-color,
+  $blue-gray
+) !default;
+
+/* =============================================
+=                 CopyrightInfo                =
+============================================= */
+$copyright-color: var(--copyright-color, $purple) !default;
+$copyright-border-color: var(--copyright-border-color, $blue-gray-50) !default;

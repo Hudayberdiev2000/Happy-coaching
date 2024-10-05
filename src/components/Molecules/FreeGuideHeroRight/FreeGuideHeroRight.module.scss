@@ -1,12 +1,15 @@
 @use 'sass:map';
 @import '../../../foundation/sass/all';
 
-.hero-left {
-  background-color: $freeguide-hero-left-bg-color;
+.hero-right {
   color: $freeguide-hero-left-color;
   height: 72rem;
   width: 72rem;
   @include center-flex;
+
+  &--with-bg {
+    background-color: $freeguide-hero-left-bg-color;
+  }
 
   &__inner {
     background-color: $freeguide-hero-left-inner-bg-color;

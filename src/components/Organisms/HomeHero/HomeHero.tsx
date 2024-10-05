@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './HomeHero.module.scss';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
 import Image from 'next/image';
-import Button from '@/components/Atoms/Button';
 import SuccessRate from '@/components/Atoms/SuccessRate';
 import WaveIcon from '@/components/Atoms/WaveIcon';
 import HeroLeft from '@/components/Molecules/HeroLeft';

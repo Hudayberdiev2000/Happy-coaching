@@ -3,23 +3,37 @@ import styles from './HeroLeft.module.scss';
 import Button from '@/components/Atoms/Button';
 
 interface HeroLeftProps {
-  upheading: string;
+  upheading?: string;
   heading: string;
+  headingSize?: 'small' | 'large';
   description: string;
+  description2?: string;
   btnLabel: string;
 }
 
 const HeroLeft: React.FC<HeroLeftProps> = ({
-  upheading,
+  upheading = false,
+  headingSize = 'large',
   heading,
   description,
+  description2 = false,
   btnLabel,
 }) => {
   return (
     <div className={styles['hero-left']}>
-      <p className={styles['hero-left__subheading']}>{upheading}</p>
-      <h1 className={styles['hero-left__heading']}>{heading}</h1>
+      {upheading && (
+        <p className={styles['hero-left__subheading']}>{upheading}</p>
+      )}
+
+      <h1
+        className={`${styles['hero-left__heading']} ${headingSize === 'small' ? styles['hero-left__heading--small'] : ''}`}
+      >
+        {heading}
+      </h1>
       <p className={styles['hero-left__text']}>{description}</p>
+      {description2 && (
+        <p className={styles['hero-left__text']}>{description2}</p>
+      )}
       <Button size="large">{btnLabel}</Button>
     </div>
   );

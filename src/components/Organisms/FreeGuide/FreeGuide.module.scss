@@ -1,0 +1,11 @@
+@import '../../../foundation/sass/all';
+
+.free-guide {
+  height: 87.8rem;
+  @include center-flex;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

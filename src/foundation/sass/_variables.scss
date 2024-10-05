@@ -78,6 +78,8 @@ $fs-xxxl: 4.8rem; // 48px
 $fs-xxxxl: 7.2rem; // 7.2px
 
 $fs: (
+  xxs: 0.8rem,
+  // 8px
   xs: 1.2rem,
   // 12px
   sm: 1.6rem,
@@ -98,7 +100,7 @@ $fs: (
 
 /* Heading font sizes */
 $h-1: 7.2rem; // 48px
-$h-2: 4.8rem; // 4.8px
+$h-2: 4.8rem; // 48px
 $h-3: 3.6rem; // 36px
 $h-4: 2.4rem; // 24px
 $h-5: 1.8rem; // 18px

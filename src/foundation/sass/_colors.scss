@@ -137,3 +137,21 @@ $footer-main-link-hover-color: var(
 ============================================= */
 $copyright-color: var(--copyright-color, $purple) !default;
 $copyright-border-color: var(--copyright-border-color, $blue-gray-50) !default;
+
+/* =============================================
+=                 FreeGuideHeroLeft            =
+============================================= */
+
+$freeguide-hero-left-bg-color: var(
+  --freeguide-hero-left-bg-color,
+  $white-floral
+) !default;
+$freeguide-hero-left-color: var(--freeguide-hero-left-color, $white) !default;
+$freeguide-hero-after-bg-color: var(
+  --freeguide-hero-left-after-bg-color,
+  $green
+) !default;
+$freeguide-hero-left-inner-bg-color: var(
+  --freeguide-hero-left-inner-bg-color,
+  $purple
+) !default;

@@ -1,0 +1,9 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: map.get($spacing, 'xxl');
+  @include padding('bottom', 'xxl');
+}

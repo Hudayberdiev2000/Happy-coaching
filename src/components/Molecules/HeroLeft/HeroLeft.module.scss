@@ -23,6 +23,11 @@
   }
 
   &__heading--small {
+    font-size: $h-3-font-size;
+    line-height: 4.465rem;
+  }
+
+  &__heading--medium {
     font-size: $h-2-font-size;
     letter-spacing: -1%;
     line-height: 5.6rem;

@@ -5,7 +5,7 @@ import Button from '@/components/Atoms/Button';
 interface HeroLeftProps {
   upheading?: string;
   heading: string;
-  headingSize?: 'small' | 'large';
+  headingSize?: 'small' | 'medium' | 'large';
   description: string;
   description2?: string;
   btnLabel: string;
@@ -26,7 +26,7 @@ const HeroLeft: React.FC<HeroLeftProps> = ({
       )}
 
       <h1
-        className={`${styles['hero-left__heading']} ${headingSize === 'small' ? styles['hero-left__heading--small'] : ''}`}
+        className={`${styles['hero-left__heading']} ${styles[`hero-left__heading--${headingSize}`]}`}
       >
         {heading}
       </h1>

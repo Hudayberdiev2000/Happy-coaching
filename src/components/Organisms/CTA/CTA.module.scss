@@ -1,0 +1,55 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.cta {
+  height: 57.6rem;
+
+  &__container {
+    background-color: $cta-bg-color;
+    border-radius: $br-lg;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 48rem;
+    overflow: hidden;
+  }
+
+  &__left-box {
+    place-self: center center;
+    width: 60.8rem;
+    @include padding('left', 'xl');
+  }
+
+  &__heading {
+    color: $cta-heading-color;
+    font-size: $h-3-font-size;
+    font-weight: $h-3-font-weight;
+    line-height: 4.465rem;
+    @include margin('bottom', 'md');
+  }
+
+  &__text {
+    color: $cta-color;
+    font-size: $fs-lg;
+    @include margin('bottom', 'xl');
+  }
+
+  &__right-box {
+    height: 100%;
+    position: relative;
+  }
+
+  &__img-wrapper {
+    bottom: 0;
+    height: 43.2rem;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 56rem;
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}

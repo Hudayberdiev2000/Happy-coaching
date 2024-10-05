@@ -17,34 +17,6 @@
     transform: translate(-50%, 0);
   }
 
-  &__info-box {
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    gap: map.get($spacing, 'sm');
-    @include padding('right', 'xl');
-  }
-
-  &__subheading {
-    color: $hero-subheading-color;
-    font-size: $fs-sm;
-    letter-spacing: -2%;
-  }
-
-  &__heading {
-    color: $hero-heading-color;
-    font-size: $h-1-font-size;
-    font-weight: $h-1-font-weight;
-    letter-spacing: -1%;
-    line-height: 8.64rem;
-  }
-
-  &__text {
-    color: $hero-text-color;
-    font-size: $fs-sm;
-    line-height: 2.88rem;
-  }
-
   &__img-box {
     align-items: end;
     display: flex;

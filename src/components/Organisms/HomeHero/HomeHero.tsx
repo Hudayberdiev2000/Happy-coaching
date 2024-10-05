@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Button from '@/components/Atoms/Button';
 import SuccessRate from '@/components/Atoms/SuccessRate';
 import WaveIcon from '@/components/Atoms/WaveIcon';
+import HeroLeft from '@/components/Molecules/HeroLeft';
 
 const HomeHero: React.FC = () => {
   return (
@@ -15,21 +16,15 @@ const HomeHero: React.FC = () => {
             <WaveIcon />
           </div>
 
-          <div className={styles['home-hero__info-box']}>
-            <p className={styles['home-hero__subheading']}>
-              Proven strategies backed by science for success.
-            </p>
-            <h1 className={styles['home-hero__heading']}>
-              Live life at the full potential
-            </h1>
-            <p className={styles['home-hero__text']}>
-              I help people to discover their true potential and live a
-              fulfilling life... Discover the simple 3 steps that I discovered
-              to hack productivity. It just works and it is begin using backed
-              by science. Wanna transform your life?
-            </p>
-            <Button size="large">Get your free guide now</Button>
-          </div>
+          <HeroLeft
+            upheading="Proven strategies backed by science for success."
+            heading="Live life at the full potential"
+            description="I help people to discover their true potential and live a fulfilling
+        life... Discover the simple 3 steps that I discovered to hack
+        productivity. It just works and it is begin using backed by science.
+        Wanna transform your life?"
+            btnLabel="Get your free guide now"
+          />
 
           <div className={styles['home-hero__img-box']}>
             <div className={styles['home-hero__img-wrapper']}>

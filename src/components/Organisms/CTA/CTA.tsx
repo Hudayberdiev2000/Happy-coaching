@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './CTA.module.scss';
-import HeroLeft from '@/components/Molecules/HeroLeft';
 import Image from 'next/image';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
 import Button from '@/components/Atoms/Button';

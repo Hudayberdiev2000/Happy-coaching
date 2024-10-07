@@ -8,7 +8,7 @@ interface HeroLeftProps {
   headingSize?: 'small' | 'medium' | 'large';
   description: string;
   description2?: string;
-  btnLabel: string;
+  btnLabel?: string;
 }
 
 const HeroLeft: React.FC<HeroLeftProps> = ({
@@ -34,7 +34,7 @@ const HeroLeft: React.FC<HeroLeftProps> = ({
       {description2 && (
         <p className={styles['hero-left__text']}>{description2}</p>
       )}
-      <Button size="large">{btnLabel}</Button>
+      {btnLabel && <Button size="large">{btnLabel}</Button>}
     </div>
   );
 };

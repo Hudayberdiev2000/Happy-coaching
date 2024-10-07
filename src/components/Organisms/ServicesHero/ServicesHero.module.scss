@@ -1,0 +1,26 @@
+@import '../../../foundation/sass/all';
+
+.service-hero {
+  background-color: $services-hero-bg-color;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 78.7rem;
+  }
+
+  &__img-box {
+    @include center-flex;
+  }
+
+  &__img-wrapper {
+    height: 60.3rem;
+    width: 46.2rem;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}

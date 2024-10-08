@@ -6,11 +6,11 @@ import NavbarItem from '@/components/Atoms/NavbarItem';
 const NavbarItems = [
   {
     title: 'Home',
-    href: '#',
+    href: '/',
   },
   {
     title: 'Services',
-    href: '#',
+    href: '/services',
   },
   {
     title: 'About us',

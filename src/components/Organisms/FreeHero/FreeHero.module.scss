@@ -1,0 +1,45 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.hero {
+  color: $free-hero-color;
+
+  &__container {
+    @include center-flex;
+
+    gap: map.get($spacing, 'xxl');
+  }
+
+  &__left {
+    width: 54.4rem;
+  }
+
+  &__heading {
+    color: $heading-color;
+    font-size: $h-2-font-size;
+    font-weight: $h-2-font-weight;
+    @include margin('bottom', 'md');
+  }
+
+  &__description {
+    font-size: $fs-lg;
+    line-height: 3rem;
+    @include margin('bottom', 'lg');
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, 'md');
+    width: 29.9rem;
+  }
+
+  &__label {
+    font-size: $fs-xs;
+
+    &__link {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}

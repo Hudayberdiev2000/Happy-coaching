@@ -172,3 +172,12 @@ $services-hero-bg-color: var(--services-hero-bg-color, $white-floral) !default;
 =                 FeatureCard                  =
 ============================================= */
 $feature-card-color: var(--feature-card-color, $blue-gray) !default;
+
+/* =============================================
+=                 ServicesFeature              =
+============================================= */
+$services-feature-color: var(--services-feature-color, $blue-gray) !default;
+$services-feature-upheading-color: var(
+  --services-feature-upheding-color,
+  $blue-gray-50
+) !default;

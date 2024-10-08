@@ -1,0 +1,33 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: map.get($spacing, 'xxs');
+
+  &__button {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: $heading-color;
+    cursor: pointer;
+    display: block;
+    display: flex;
+    font-size: $fs-md;
+    font-weight: $fw-semibold;
+    justify-content: space-between;
+    line-height: 2.8rem;
+    width: 100%;
+  }
+
+  &__icon-wrapper {
+    padding: map.get($spacing, 'xxxs');
+  }
+
+  &__answer {
+    color: $accordion-color;
+    font-size: $fs-sm;
+    line-height: 2.4rem;
+  }
+}

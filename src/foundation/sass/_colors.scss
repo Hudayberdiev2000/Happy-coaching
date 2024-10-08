@@ -181,3 +181,8 @@ $services-feature-upheading-color: var(
   --services-feature-upheding-color,
   $blue-gray-50
 ) !default;
+
+/* =============================================
+=            Accordion                         =
+============================================= */
+$accordion-color: var(--accordion-color, $blue-gray) !default;

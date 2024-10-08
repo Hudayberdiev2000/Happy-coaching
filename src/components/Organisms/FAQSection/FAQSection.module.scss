@@ -1,0 +1,53 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.faq {
+  &__container {
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: map.get($spacing, 'xxxl');
+    min-height: 95rem;
+    @include center-flex;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, 'sm');
+    text-align: center;
+  }
+
+  &__heading {
+    color: $heading-color;
+    font-size: $h-2-font-size;
+    font-weight: $h-2-font-weight;
+  }
+
+  &__subheading {
+    color: $faq-section-color;
+    font-size: $fs-lg;
+  }
+
+  &__footer {
+    align-self: stretch;
+    background-color: $faq-section-footer-bg;
+    border-radius: $br-md;
+    flex-direction: column;
+    height: 20.6rem;
+    text-align: center;
+    @include center-flex;
+
+    &__heading {
+      color: $heading-color;
+      font-size: $fs-lg;
+      font-weight: $fw-bold;
+      @include margin('bottom', 'xxs');
+    }
+
+    &__description {
+      color: $faq-section-color;
+      font-size: $fs-md;
+      @include margin('bottom', 'lg');
+    }
+  }
+}

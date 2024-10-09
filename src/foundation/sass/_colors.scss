@@ -202,3 +202,16 @@ $faq-section-footer-bg: var(--faq-section-footer-bg, $white-floral) !default;
 =            FreeHero                          =
 ============================================= */
 $free-hero-color: var(--free-hero-color, $blue-gray) !default;
+
+/* =============================================
+=            TestimonialCard                   =
+============================================= */
+$testimonial-card-border-color: var(
+  --testimonial-card-border-color,
+  $white-smoke
+) !default;
+$testimonial-card-color: var(--testimonial-card-color, $blue-gray) !default;
+$testimonial-card-last-name-color: var(
+  --testimonial-card-last-name-color,
+  $blue-gray-50
+) !default;

@@ -7,7 +7,7 @@ interface StarsProps {
 
 const Stars: React.FC<StarsProps> = ({ rating }) => {
   return (
-    <div className={styles['review-card__stars']}>
+    <div className={styles['stars']}>
       {[1, 2, 3, 4, 5].map(starNumber => (
         <svg
           key={starNumber}

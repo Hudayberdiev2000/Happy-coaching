@@ -1,0 +1,41 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.card {
+  border: 1px solid $testimonial-card-border-color;
+  height: 31.2rem;
+  padding: map.get($spacing, 'sm');
+  text-align: center;
+  width: 45rem;
+
+  &__description {
+    color: $testimonial-card-color;
+    font-size: $fs-sm;
+    line-height: 2.4rem;
+    @include margin('bottom', 'xl');
+  }
+
+  &__img {
+    border-radius: $br-full;
+    height: 6.4rem;
+    width: 6.4rem;
+    @include margin('bottom', 'sm');
+  }
+
+  &__first-name {
+    font-size: $fs-md;
+    font-weight: $fw-bold;
+    @include margin('bottom', 'xxxs');
+  }
+
+  &__last-name {
+    color: $testimonial-card-last-name-color;
+    font-size: $fs-sm;
+    line-height: 2.4rem;
+    @include margin('bottom', 'sm');
+  }
+
+  &__stars {
+    @include center-flex;
+  }
+}

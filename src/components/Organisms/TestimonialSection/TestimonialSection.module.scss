@@ -1,0 +1,38 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.testimonial {
+  &__header {
+    @include center-flex;
+
+    justify-content: space-between;
+    padding: map.get($spacing, 'xxl') 0 map.get($spacing, 'xxl') 0;
+  }
+
+  &__upheading {
+    color: $testimonial-section-upheading-color;
+    font-size: $fs-sm;
+    @include margin('bottom', 'sm');
+  }
+
+  &__heading {
+    color: $heading-color;
+    font-size: $h-2-font-size;
+    font-weight: $h-2-font-weight;
+    letter-spacing: -2%;
+  }
+
+  &__cards {
+    @include padding('top', 'sm');
+    @include padding('bottom', 'xxl');
+    @include center-flex;
+
+    flex-direction: column;
+    gap: map.get($spacing, 'xl');
+  }
+
+  &__card-row {
+    display: flex;
+    gap: map.get($spacing, 'lg');
+  }
+}

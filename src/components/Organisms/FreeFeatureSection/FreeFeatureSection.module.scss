@@ -1,0 +1,45 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.feature {
+  &__upper {
+    background-color: $free-feature-section-bg-color;
+    height: 51.8rem;
+
+    &__container {
+      @include padding('top', 'xxxl');
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__left {
+      width: 80%;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, 'xl');
+  }
+
+  &__bottom {
+    height: 43.2rem;
+  }
+
+  &__video-wrapper {
+    border-radius: $br-md;
+    height: 43.2rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    transform: translate(0, -(map.get($spacing, 'xxxl')));
+    width: 76.8rem;
+  }
+
+  &__video {
+    height: 100%;
+    width: 100%;
+  }
+}

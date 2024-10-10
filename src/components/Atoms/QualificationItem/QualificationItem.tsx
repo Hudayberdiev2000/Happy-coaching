@@ -4,9 +4,13 @@ import Image from 'next/image';
 
 interface QualificationItemProps {
   type: 'good' | 'bad';
+  text: string;
 }
 
-const QualificationItem: React.FC<QualificationItemProps> = ({ type }) => {
+const QualificationItem: React.FC<QualificationItemProps> = ({
+  type,
+  text,
+}) => {
   return (
     <div className={styles['qualification']}>
       <div className={styles['qualification__img-wrapper']}>
@@ -18,9 +22,7 @@ const QualificationItem: React.FC<QualificationItemProps> = ({ type }) => {
           alt="tic or cross"
         />
       </div>
-      <p className={styles['qualification__text']}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit
-      </p>
+      <p className={styles['qualification__text']}>{text}</p>
     </div>
   );
 };

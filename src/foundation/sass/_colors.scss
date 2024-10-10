@@ -293,3 +293,11 @@ $about-review-section-bg-color: var(
 =            QualificationItem                 =
 ============================================= */
 $qualification-item-color: var(--qualification-item-color, $blue-gray) !default;
+
+/* =============================================
+=            QualificationCard                 =
+============================================= */
+$qualification-card-primary-bg-color: var(
+  --qualification-card-primary-bg-color,
+  $white
+) !default;

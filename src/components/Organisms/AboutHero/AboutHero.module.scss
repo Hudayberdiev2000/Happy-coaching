@@ -1,0 +1,78 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.hero {
+  background-color: $about-hero-section-bg-color;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 66.7rem;
+    position: relative;
+  }
+
+  &__img-box {
+    align-items: end;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img-wrapper {
+    height: 60.3rem;
+    position: relative;
+    transform: translate(0, 2.6rem);
+    width: 46.2rem;
+  }
+
+  &__image {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__icon1-wrapper {
+    background-color: $about-hero-icon-wrapper-bg-color;
+    border-radius: $br-full;
+    left: 21.2%;
+    padding: map.get($spacing, 'md');
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+    @include center-flex;
+  }
+
+  &__icon1 {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+
+  &__icon2-wrapper {
+    background-color: $about-hero-icon-wrapper-bg-color;
+    flex-direction: column;
+    gap: map.get($spacing, 'md');
+    height: 18.8rem;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(70%, -50%);
+    width: 19.4rem;
+    @include center-flex;
+
+    &__text-box {
+      @include center-flex;
+
+      flex-direction: column;
+      font-size: $fs-sm;
+      gap: map.get($spacing, 'xxxs');
+      letter-spacing: -2%;
+    }
+
+    &__text1 {
+      color: $about-hero-icon-wrapper-text1-color;
+    }
+
+    &__text2 {
+      color: $about-hero-icon-wrapper-text2-color;
+    }
+  }
+}

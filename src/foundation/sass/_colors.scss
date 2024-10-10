@@ -241,3 +241,23 @@ $free-cta-heading-highlight-color: var(
   $green
 ) !default;
 $free-cta-footer-color: var(--free-cta-footer-color, $blue-gray-50) !default;
+
+/* =============================================
+=            AboutHeroSection                  =
+============================================= */
+$about-hero-section-bg-color: var(
+  --about-hero-section-bg-color,
+  $white-floral
+) !default;
+$about-hero-icon-wrapper-bg-color: var(
+  --about-hero-icon-wrapper-bg-color,
+  $white
+) !default;
+$about-hero-icon-wrapper-text1-color: var(
+  --about-hero-icon-wrapper-text1-color,
+  $blue-gray
+) !default;
+$about-hero-icon-wrapper-text2-color: var(
+  --about-hero-icon-wrapper-text2-color,
+  $purple
+) !default;

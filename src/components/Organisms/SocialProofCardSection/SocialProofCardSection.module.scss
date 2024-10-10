@@ -1,0 +1,19 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.social {
+  &__container {
+    color: $social-proof-section-color;
+    flex-direction: column;
+    font-size: $fs-sm;
+    gap: map.get($spacing, 'lg');
+    height: 29.6rem;
+    @include center-flex;
+  }
+
+  &__cards {
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+  }
+}

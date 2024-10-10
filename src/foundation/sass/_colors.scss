@@ -266,3 +266,11 @@ $about-hero-icon-wrapper-text2-color: var(
 =            SocialProofCard                   =
 ============================================= */
 $social-proof-card-color: var(--social-proof-card-color, $blue-gray) !default;
+
+/* =============================================
+=            SocialProofSection                =
+============================================= */
+$social-proof-section-color: var(
+  --social-proof-section-color,
+  $blue-gray
+) !default;

@@ -231,3 +231,13 @@ $free-feature-section-bg-color: var(
   --free-feature-section-bg-color,
   $white-floral
 ) !default;
+
+/* =============================================
+=            FreeCta                           =
+============================================= */
+$free-cta-color: var(--free-cta-color, $blue-gray) !default;
+$free-cta-heading-highlight-color: var(
+  --free-cta-heading-highlight-color,
+  $green
+) !default;
+$free-cta-footer-color: var(--free-cta-footer-color, $blue-gray-50) !default;

@@ -2,6 +2,30 @@ import React from 'react';
 import styles from './FreeCta.module.scss';
 import Button from '@/components/Atoms/Button';
 import Stars from '@/components/Atoms/Stars';
+import Image from 'next/image';
+
+const images = [
+  {
+    name: 'cta1.jpg',
+    diameter: 114,
+  },
+  {
+    name: 'cta2.jpg',
+    diameter: 58,
+  },
+  {
+    name: 'cta3.jpg',
+    diameter: 76,
+  },
+  {
+    name: 'cta4.jpg',
+    diameter: 42,
+  },
+  {
+    name: 'cta5.jpg',
+    diameter: 62,
+  },
+];
 
 const FreeCta: React.FC = () => {
   return (
@@ -31,6 +55,16 @@ const FreeCta: React.FC = () => {
         </p>
         <Stars rating={5} />
       </div>
+      {images.map((image, index) => (
+        <Image
+          key={index}
+          className={`${styles['cta__img']} ${styles[`cta__img${index + 1}`]}`}
+          width={image.diameter}
+          height={image.diameter}
+          src={`/images/${image.name}`}
+          alt="circled image"
+        />
+      ))}
     </section>
   );
 };

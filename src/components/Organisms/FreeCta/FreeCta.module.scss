@@ -7,6 +7,7 @@
   gap: map.get($spacing, 'xxl');
   height: 55.6rem;
   justify-content: center;
+  position: relative;
 
   &__upper {
     text-align: center;
@@ -23,12 +24,12 @@
     @include margin('bottom', 'sm');
 
     &__highlight {
-      color: $green;
+      color: $free-cta-heading-highlight-color;
     }
   }
 
   &__description {
-    color: $blue-gray;
+    color: $free-cta-color;
     font-size: $fs-sm;
     line-height: 2.5rem;
     margin: 0 auto;
@@ -43,8 +44,38 @@
     gap: map.get($spacing, 'xxs');
 
     &__text {
-      color: $blue-gray-50;
+      color: $free-cta-footer-color;
       font-size: $fs-sm;
     }
+  }
+
+  &__img {
+    border-radius: $br-full;
+    position: absolute;
+  }
+
+  &__img1 {
+    left: 13%;
+    top: 34.4%;
+  }
+
+  &__img2 {
+    left: 4.4%;
+    top: 67.4%;
+  }
+
+  &__img3 {
+    right: 17.7%;
+    top: 10.4%;
+  }
+
+  &__img4 {
+    right: 5.5%;
+    top: 44.6%;
+  }
+
+  &__img5 {
+    right: 13.4%;
+    top: 74.6%;
   }
 }

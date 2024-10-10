@@ -40,8 +40,8 @@
   }
 
   &__cards {
-    gap: map.get($spacing, 'xl') map.get($spacing, 'lg');
     display: grid;
+    gap: map.get($spacing, 'xl') map.get($spacing, 'lg');
     grid-template-columns: repeat(3, 1fr);
   }
 }

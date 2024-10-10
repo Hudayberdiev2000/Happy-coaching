@@ -1,0 +1,25 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.qualification {
+  display: flex;
+  gap: map.get($spacing, 'xs');
+  width: 35rem;
+
+  &__img-wrapper {
+    height: 2.4rem;
+    width: 2.4rem;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+
+  &__text {
+    color: $qualification-item-color;
+    font-size: $fs-sm;
+    line-height: 2.4rem;
+    @include padding('top', 'xxxs');
+  }
+}

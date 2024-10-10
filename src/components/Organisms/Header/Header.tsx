@@ -16,7 +16,7 @@ const Header: React.FC = () => {
           </Link>
           <div className={styles['header__navbar-wrapper']}>
             <Navbar />
-            <Link href={'#'}>
+            <Link href={'/free-guide'}>
               <Button>Get your free guide</Button>
             </Link>
           </div>

@@ -1,0 +1,21 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.review {
+  background-color: $about-review-section-bg-color;
+  height: 87.9rem;
+  padding: 12rem 0 0 15.2rem;
+
+  &__heading {
+    color: $heading-color;
+    font-size: $h-2-font-size;
+    font-weight: $h-2-font-weight;
+    margin-bottom: map.get($spacing, 'xl');
+    max-width: 53rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: map.get($spacing, 'lg');
+  }
+}

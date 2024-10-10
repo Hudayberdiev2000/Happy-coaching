@@ -8,7 +8,7 @@ interface ReviewCardProps {
   rating: number;
   comment: string;
   imageUrl: string;
-  style: 'stared' | 'numbered';
+  style?: 'stared' | 'numbered';
 }
 
 const ReviewCard: React.FC<ReviewCardProps> = ({

@@ -4,6 +4,7 @@
 .review-card {
   $this: &;
 
+  background-color: $review-card-bg-color;
   border: 1px solid $review-card-border-color;
   display: flex;
   flex-direction: column;

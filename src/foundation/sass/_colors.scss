@@ -98,6 +98,7 @@ $review-card-number-hover-color: var(
   --review-card-number-hover-color,
   $green
 ) !default;
+$review-card-bg-color: var(--review-card-bg-color, $white) !default;
 
 /* =============================================
 =                 HomeReview                   =
@@ -278,4 +279,12 @@ $social-proof-card-color: var(--social-proof-card-color, $blue-gray) !default;
 $social-proof-section-color: var(
   --social-proof-section-color,
   $blue-gray
+) !default;
+
+/* =============================================
+=            AboutReviewSection                =
+============================================= */
+$about-review-section-bg-color: var(
+  --about-review-section-bg-color,
+  $white-floral
 ) !default;

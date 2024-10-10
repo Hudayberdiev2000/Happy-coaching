@@ -2,16 +2,25 @@
 @import '../../../foundation/sass/all';
 
 .review-card {
+  $this: &;
+
   border: 1px solid $review-card-border-color;
   display: flex;
   flex-direction: column;
   gap: map.get($spacing, 'sm');
-  height: 39.1rem;
   padding: map.get($spacing, 'xl');
   transition: all 0.5s ease;
   width: 40rem;
 
+  &__rating-number {
+    color: $review-card-color;
+    font-size: $fs-xxl;
+    font-weight: $fw-black;
+    transition: color 500ms ease;
+  }
+
   &__comment {
+    color: $review-card-color;
     font-size: $fs-xl;
     letter-spacing: -3%;
     line-height: 3.4rem;
@@ -39,5 +48,8 @@
     border-color: transparent;
     box-shadow: 0 0 5px rgb(0 0 0 / 9.9%);
     cursor: pointer;
+    #{$this}__rating-number {
+      color: $review-card-number-hover-color;
+    }
   }
 }

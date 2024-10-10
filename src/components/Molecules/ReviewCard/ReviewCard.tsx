@@ -8,6 +8,7 @@ interface ReviewCardProps {
   rating: number;
   comment: string;
   imageUrl: string;
+  style: 'stared' | 'numbered';
 }
 
 const ReviewCard: React.FC<ReviewCardProps> = ({
@@ -15,9 +16,13 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
   rating,
   comment,
   imageUrl,
+  style = 'starred',
 }) => {
   return (
     <div className={styles['review-card']}>
+      {style === 'numbered' && (
+        <p className={styles['review-card__rating-number']}>{`5/${rating}`}</p>
+      )}
       <p className={styles['review-card__comment']}>{`"${comment}"`}</p>
       <p className={styles['review-card__commenter-name']}>{commenter}</p>
       <div className={styles['review-card__img-wrapper']}>
@@ -29,7 +34,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
           width={70}
         />
       </div>
-      <Stars rating={rating} />
+      {style === 'starred' && <Stars rating={rating} />}
     </div>
   );
 };

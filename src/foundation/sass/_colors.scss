@@ -93,6 +93,11 @@ $review-card-border-color: var(
   --review-card-border-color,
   $white-smoke
 ) !default;
+$review-card-color: var(--review-card-color, $blue-gray) !default;
+$review-card-number-hover-color: var(
+  --review-card-number-hover-color,
+  $green
+) !default;
 
 /* =============================================
 =                 HomeReview                   =

@@ -301,3 +301,15 @@ $qualification-card-primary-bg-color: var(
   --qualification-card-primary-bg-color,
   $white
 ) !default;
+
+/* =============================================
+=            QualificationSection              =
+============================================= */
+$qualification-section-upheading-color: var(
+  --qualification-section-upheading-color,
+  $blue-gray-50
+) !default;
+$qualification-section-bg-color: var(
+  --qualification-section-bg-color,
+  $white-floral
+) !default;

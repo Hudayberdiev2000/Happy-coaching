@@ -1,0 +1,47 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.feature {
+  height: 82.4rem;
+  @include center-flex;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: map.get($spacing, xxl);
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__upheading {
+    @include margin('bottom', 'xs');
+
+    color: $blue-gray-50;
+    font-size: $fs-sm;
+  }
+
+  &__heading {
+    @include margin('bottom', 'md');
+
+    color: $heading-color;
+    font-size: $h-3-font-size;
+    font-weight: $h-3-font-weight;
+    letter-spacing: -2%;
+  }
+
+  &__text {
+    color: $blue-gray;
+    font-size: $fs-lg;
+    line-height: 3rem;
+    margin: 0 auto;
+    max-width: 76.8rem;
+  }
+
+  &__cards {
+    gap: map.get($spacing, 'xl') map.get($spacing, 'lg');
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

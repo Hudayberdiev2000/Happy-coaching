@@ -313,3 +313,8 @@ $qualification-section-bg-color: var(
   --qualification-section-bg-color,
   $white-floral
 ) !default;
+
+/* =============================================
+=            GuaranteeSection              =
+============================================= */
+$guarantee-section-color: var(--guarantee-section-color, $blue-gray) !default;

@@ -1,0 +1,28 @@
+@import '../../../foundation/sass/all';
+
+.section {
+  height: 67rem;
+  @include center-flex;
+
+  &__container {
+    max-width: 54rem;
+    text-align: center;
+  }
+
+  &__img {
+    height: 26.6rem;
+    width: 31.2rem;
+  }
+
+  &__heading {
+    font-size: $h-3-font-size;
+    font-weight: $h-3-font-weight;
+    @include margin('bottom', 'md');
+  }
+
+  &__text {
+    color: $guarantee-section-color;
+    font-size: $fs-lg;
+    text-align: center;
+  }
+}

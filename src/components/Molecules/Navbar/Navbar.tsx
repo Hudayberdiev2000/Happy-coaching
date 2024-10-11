@@ -14,11 +14,11 @@ const NavbarItems = [
   },
   {
     title: 'About us',
-    href: '#',
+    href: 'about-us',
   },
   {
     title: 'Extra Salespage',
-    href: '#',
+    href: 'extra-sales',
   },
 ];
 

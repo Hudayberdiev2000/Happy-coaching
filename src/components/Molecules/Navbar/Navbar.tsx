@@ -13,8 +13,8 @@ const NavbarItems = [
     href: '/services',
   },
   {
-    title: 'About us',
-    href: 'about-us',
+    title: 'About me',
+    href: 'about-me',
   },
   {
     title: 'Extra Salespage',

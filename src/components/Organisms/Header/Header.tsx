@@ -11,7 +11,7 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <MainContainer>
         <div className={styles['header__container']}>
-          <Link href="#" className={styles['header__logo-link']}>
+          <Link href="/" className={styles['header__logo-link']}>
             <Logo />
           </Link>
           <div className={styles['header__navbar-wrapper']}>

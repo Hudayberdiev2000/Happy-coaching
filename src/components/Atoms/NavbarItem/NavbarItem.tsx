@@ -10,7 +10,7 @@ interface NavbarItemProps {
 const NavbarItem: React.FC<NavbarItemProps> = ({ href, title }) => {
   return (
     <li className={styles['nav-item']}>
-      <Link href={href} className={styles['nav-link']}>
+      <Link href={href} className={styles['nav-link']} title={title}>
         {title}
       </Link>
     </li>

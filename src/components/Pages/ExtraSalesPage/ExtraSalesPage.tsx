@@ -8,6 +8,8 @@ import QualificationSection from '@/components/Organisms/QualificationSection';
 import TestimonialSection from '@/components/Organisms/TestimonialSection';
 import React from 'react';
 
+import styles from './ExtraSalesPage.module.scss';
+
 const ExtraSalesPage: React.FC = () => {
   return (
     <>
@@ -15,7 +17,9 @@ const ExtraSalesPage: React.FC = () => {
       <AboutFeatureSection />
       <FreeFeatureSection />
       <TestimonialSection />
-      <QualificationSection />
+      <div className={styles['qualification']}>
+        <QualificationSection />
+      </div>
       <CTA />
       <GuaranteeSection />
       <FAQSection />

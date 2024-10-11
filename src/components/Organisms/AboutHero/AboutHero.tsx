@@ -11,7 +11,7 @@ const AboutHero: React.FC = () => {
         <div className={styles['hero__container']}>
           <HeroLeft
             upheading="Proven strategies backed by science for success."
-            heading="Live life at the full potential"
+            heading="About me"
             description="I help people to discover their true potential and live a fulfilling
         life... Discover the simple 3 steps that I discovered to hack
         productivity. It just works and it is begin using backed by science.

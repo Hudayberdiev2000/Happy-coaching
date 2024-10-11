@@ -2,10 +2,12 @@
 @import '../../../foundation/sass/all';
 
 .navbar {
-  display: flex;
-  gap: map.get($spacing, 'lg');
+  align-self: stretch;
+  @include center-flex;
 
   &__nav-list {
+    align-items: stretch;
+    align-self: stretch;
     display: flex;
     gap: 3rem;
   }

@@ -1,0 +1,24 @@
+@use 'sass:map';
+@import '../../../foundation/sass/all';
+
+.hero {
+  background-color: $hero-bg-color;
+  @include center-flex;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 66.7rem;
+    position: relative;
+  }
+
+  &__wave-icon {
+    position: absolute;
+    top: map.get($spacing, 'xl');
+    transform: translate(-50%, 0);
+  }
+
+  &--high {
+    height: 78.7rem;
+  }
+}

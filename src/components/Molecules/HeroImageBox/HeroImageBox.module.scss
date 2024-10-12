@@ -1,0 +1,29 @@
+@import '../../../foundation/sass/all';
+
+.box {
+  $this: &;
+  align-items: end;
+  display: flex;
+  justify-content: center;
+
+  &__img-wrapper {
+    height: 60.3rem;
+    position: relative;
+
+    width: 46.2rem;
+  }
+
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &--centered {
+    align-items: center;
+  }
+
+  &--not-centered {
+    transform: translate(0, 2.6rem);
+  }
+}

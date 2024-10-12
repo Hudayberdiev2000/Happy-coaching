@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './HeroLeft.module.scss';
 import Button from '@/components/Atoms/Button';
 
@@ -9,6 +9,7 @@ interface HeroLeftProps {
   description: string;
   description2?: string;
   btnLabel?: string;
+  children?: ReactNode;
 }
 
 const HeroLeft: React.FC<HeroLeftProps> = ({
@@ -17,7 +18,7 @@ const HeroLeft: React.FC<HeroLeftProps> = ({
   heading,
   description,
   description2 = false,
-  btnLabel,
+  children,
 }) => {
   return (
     <div className={styles['hero-left']}>
@@ -34,7 +35,7 @@ const HeroLeft: React.FC<HeroLeftProps> = ({
       {description2 && (
         <p className={styles['hero-left__text']}>{description2}</p>
       )}
-      {btnLabel && <Button size="large">{btnLabel}</Button>}
+      {children}
     </div>
   );
 };

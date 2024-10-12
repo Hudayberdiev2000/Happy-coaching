@@ -15,10 +15,10 @@
     display: block;
     display: flex;
     font-size: $fs-md;
+    font-weight: $fw-bold;
     justify-content: space-between;
     line-height: 2.8rem;
     width: 100%;
-    font-weight: $fw-bold;
   }
 
   &__icon-wrapper {

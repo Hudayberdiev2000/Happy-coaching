@@ -3,7 +3,6 @@
 
 .hero {
   background-color: $hero-bg-color;
-  @include center-flex;
 
   &__container {
     display: grid;

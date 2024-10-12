@@ -1,11 +1,9 @@
 import React from 'react';
-import styles from './AboutHero.module.scss';
-import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
-import Image from 'next/image';
 import HeroLeft from '@/components/Molecules/HeroLeft';
 import Button from '@/components/Atoms/Button';
 import HeroImageBox from '@/components/Molecules/HeroImageBox';
 import HeroSection from '../HeroSection';
+import AboutHeroInfoCards from '@/components/Molecules/AboutHeroInfoCards';
 
 const AboutHero: React.FC = () => {
   return (
@@ -22,32 +20,7 @@ const AboutHero: React.FC = () => {
       </HeroLeft>
 
       <HeroImageBox imageUrl="/images/home-hero.png">
-        <div className={styles['hero__icon1-wrapper']}>
-          <Image
-            className={styles['hero__icon1']}
-            width={80}
-            height={80}
-            src={'/icons/about-heroicon1.svg'}
-            alt="icon1"
-          />
-        </div>
-        <div className={styles['hero__icon2-wrapper']}>
-          <Image
-            className={styles['hero__icon2']}
-            width={48}
-            height={48}
-            src={'/icons/about-heroicon2.svg'}
-            alt="icon1"
-          />
-          <div className={styles['hero__icon2-wrapper__text-box']}>
-            <span className={styles['hero__icon2-wrapper__text1']}>
-              More than 250+
-            </span>
-            <span className={styles['hero__icon2-wrapper__text2']}>
-              Online Sessions
-            </span>
-          </div>
-        </div>
+        <AboutHeroInfoCards />
       </HeroImageBox>
     </HeroSection>
   );

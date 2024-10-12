@@ -2,6 +2,7 @@
 
 .box {
   $this: &;
+
   align-items: end;
   display: flex;
   justify-content: center;
@@ -9,7 +10,6 @@
   &__img-wrapper {
     height: 60.3rem;
     position: relative;
-
     width: 46.2rem;
   }
 

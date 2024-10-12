@@ -3,14 +3,14 @@ import styles from './FeatureCard.module.scss';
 import Image from 'next/image';
 
 interface FeatureCardProps {
-  iconName: string;
+  iconUrl: string;
   title: string;
   description: string;
   orientation?: 'vertical' | 'horizontal';
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({
-  iconName,
+  iconUrl,
   title,
   description,
   orientation = 'vertical',
@@ -24,8 +24,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
           className={styles['feature-card__icon']}
           width={48}
           height={48}
-          alt={iconName}
-          src={`/icons/${iconName}`}
+          alt={iconUrl}
+          src={iconUrl}
         />
       </div>
       <div className={styles['feature-card__text-box']}>

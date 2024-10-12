@@ -5,6 +5,7 @@ import FeatureCard from '@/components/Molecules/FeatureCard';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
 import Video from 'next-video';
 import coaching from '../../../../videos/coaching.mp4';
+import { Features } from '../../../../data';
 
 const FreeFeatureSection: React.FC = () => {
   return (
@@ -22,18 +23,15 @@ const FreeFeatureSection: React.FC = () => {
             </div>
 
             <div className={styles['feature__cards']}>
-              <FeatureCard
-                orientation="horizontal"
-                iconName="feature-online-con.svg"
-                title="Online consultation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-              />
-              <FeatureCard
-                orientation="horizontal"
-                iconName="feature-ready-tt.svg"
-                title="Ready to start? Let’s talk!"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
-              />
+              {Features.map(feature => (
+                <FeatureCard
+                  key={feature.id}
+                  orientation="horizontal"
+                  iconUrl={feature.iconUrl}
+                  description={feature.description}
+                  title={feature.title}
+                />
+              ))}
             </div>
           </div>
         </MainContainer>

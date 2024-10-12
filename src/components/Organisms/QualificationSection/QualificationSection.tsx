@@ -1,13 +1,7 @@
 import React from 'react';
 import styles from './QualificationSection.module.scss';
 import QualificationCard from '@/components/Molecules/QualificationCard';
-
-const advises = [
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-  'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-];
+import { Advises as advises } from '../../../../data';
 
 const QualificationSection: React.FC = () => {
   return (

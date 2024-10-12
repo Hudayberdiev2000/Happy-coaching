@@ -2,30 +2,7 @@ import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
 import ReviewCard from '@/components/Molecules/ReviewCard';
 import styles from './HomeReview.module.scss';
 import React from 'react';
-
-const reviews = [
-  {
-    commenter: 'Jane',
-    rating: 5,
-    comment:
-      'I gained so much confidence in my ability to connect and deepen my relationships with people. ',
-    imageUrl: '/images/review-image1.png',
-  },
-  {
-    commenter: 'Catherine',
-    rating: 5,
-    comment:
-      'I gained so much confidence in my ability to connect and deepen my relationships with people. ',
-    imageUrl: '/images/review-image2.png',
-  },
-  {
-    commenter: 'Jane',
-    rating: 5,
-    comment:
-      'I gained so much confidence in my ability to connect and deepen my relationships with people. ',
-    imageUrl: '/images/review-image3.png',
-  },
-];
+import { Reviews } from '../../../../data';
 
 const HomeReview: React.FC = () => {
   return (
@@ -35,7 +12,7 @@ const HomeReview: React.FC = () => {
           Hear out what my clients say about me.
         </h2>
         <div className={styles['review-card__cards']}>
-          {reviews.map(review => (
+          {Reviews.slice(0, 3).map(review => (
             <ReviewCard
               comment={review.comment}
               rating={review.rating}

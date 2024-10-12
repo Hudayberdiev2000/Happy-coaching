@@ -1,46 +1,28 @@
 import React from 'react';
 import styles from './Services.module.scss';
 import ServiceCart from '@/components/Molecules/ServiceCart';
+import { Services } from '../../../../data';
 
-const Services: React.FC = () => {
+const ServicesSection: React.FC = () => {
   return (
     <section className={styles.services}>
       <h2 className={styles['services__heading']}>
         I can help you in these particular areas.
       </h2>
-      <div className={styles['services__cards']}>
-        <div className={styles['services__cards-left']}>
-          <ServiceCart
-            withBorder={true}
-            iconName="service-sessions.svg"
-            heading="Group Coaching Sessions"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
-          />
-          <ServiceCart
-            withBorder={true}
-            iconName="service-consultation.svg"
-            heading="Consultation"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
-          />
-        </div>
-
-        <div className={styles['services__cards-right']}>
-          <ServiceCart
-            withBorder={true}
-            iconName="service-coaching.svg"
-            heading="Online course"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
-          />
-          <ServiceCart
-            withBorder={true}
-            iconName="service-coaching.svg"
-            heading="1:1 Coaching"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
-          />
-        </div>
-      </div>
+      <ul className={styles['services__cards']}>
+        {Services.slice(0, 4).map((service, index) => (
+          <li className={styles['services__card']} key={index}>
+            <ServiceCart
+              iconUrl={service.iconUrl}
+              heading={service.heading}
+              description={service.description}
+              withBorder={true}
+            />
+          </li>
+        ))}
+      </ul>
     </section>
   );
 };
 
-export default Services;
+export default ServicesSection;

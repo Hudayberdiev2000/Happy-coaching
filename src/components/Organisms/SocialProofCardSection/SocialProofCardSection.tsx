@@ -2,29 +2,7 @@ import React from 'react';
 import styles from './SocialProofCardSection.module.scss';
 import SocialProofCard from '@/components/Molecules/SocialProofCard';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
-
-const socialProofs = [
-  {
-    imageUrl: '/icons/social-proof1.svg',
-    title: 'Layers',
-  },
-  {
-    imageUrl: '/icons/social-proof2.svg',
-    title: 'Sysyphus',
-  },
-  {
-    imageUrl: '/icons/social-proof3.svg',
-    title: 'Circooles',
-  },
-  {
-    imageUrl: '/icons/social-proof4.svg',
-    title: 'Catalog',
-  },
-  {
-    imageUrl: '/icons/social-proof5.svg',
-    title: 'Quotient',
-  },
-];
+import { Partners as partners } from '../../../../data';
 
 const SocialProofCardSection: React.FC = () => {
   return (
@@ -33,11 +11,11 @@ const SocialProofCardSection: React.FC = () => {
         <div className={styles['social__container']}>
           <p>From startups to the world’s largest companies</p>
           <div className={styles['social__cards']}>
-            {socialProofs.map((socialProof, index) => (
+            {partners.map(partner => (
               <SocialProofCard
-                imageUrl={socialProof.imageUrl}
-                title={socialProof.title}
-                key={index}
+                imageUrl={partner.imageUrl}
+                title={partner.title}
+                key={partner.id}
               />
             ))}
           </div>

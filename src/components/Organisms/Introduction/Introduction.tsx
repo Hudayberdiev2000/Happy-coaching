@@ -3,6 +3,7 @@ import styles from './Introduction.module.scss';
 import WaveIcon from '@/components/Atoms/WaveIcon';
 import ServiceCart from '@/components/Molecules/ServiceCart';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
+import { Services } from '../../../../data';
 
 const Introduction: React.FC = () => {
   return (
@@ -35,21 +36,14 @@ const Introduction: React.FC = () => {
           </div>
 
           <div className={styles['introduction__bottom-box']}>
-            <ServiceCart
-              iconName="service-coaching.svg"
-              heading="1:1 Coaching"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
-            />
-            <ServiceCart
-              iconName="service-consultation.svg"
-              heading="Consultation"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
-            />
-            <ServiceCart
-              iconName="service-sessions.svg"
-              heading="Group Coaching Sessions"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam."
-            />
+            {Services.slice(0, 3).map((service, index) => (
+              <ServiceCart
+                iconUrl={service.iconUrl}
+                heading={service.heading}
+                description={service.description}
+                key={index}
+              />
+            ))}
           </div>
         </div>
       </MainContainer>

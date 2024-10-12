@@ -5,14 +5,14 @@ import Stars from '@/components/Atoms/Stars';
 
 interface TestimonialCardProps {
   description: string;
-  imageName: string;
+  imageUrl: string;
   firstName: string;
   lastName: string;
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
   description,
-  imageName,
+  imageUrl,
   firstName,
   lastName,
 }) => {
@@ -24,8 +24,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         className={styles['card__img']}
         width={64}
         height={64}
-        src={`/images/${imageName}`}
-        alt={imageName}
+        src={imageUrl}
+        alt={imageUrl}
       />
 
       <p className={styles['card__first-name']}>{firstName}</p>

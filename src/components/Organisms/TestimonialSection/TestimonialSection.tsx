@@ -3,6 +3,7 @@ import styles from './TestimonialSection.module.scss';
 import Button from '@/components/Atoms/Button';
 import TestimonialCard from '@/components/Molecules/TestimonialCard';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
+import { Testimonials } from '../../../../data';
 
 const TestimonialSection: React.FC = () => {
   return (
@@ -19,37 +20,18 @@ const TestimonialSection: React.FC = () => {
 
             <Button size="large">Get started</Button>
           </header>
-          <main className={styles['testimonial__cards']}>
-            <div className={styles['testimonial__card-row']}>
-              <TestimonialCard
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imageName="Avatar.png"
-                firstName="John Doe"
-                lastName="Smith"
-              />
-              <TestimonialCard
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imageName="Avatar.png"
-                firstName="John Doe"
-                lastName="Smith"
-              />
-            </div>
-
-            <div className={styles['testimonial__card-row']}>
-              <TestimonialCard
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imageName="Avatar.png"
-                firstName="John Doe"
-                lastName="Smith"
-              />
-              <TestimonialCard
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                imageName="Avatar.png"
-                firstName="John Doe"
-                lastName="Smith"
-              />
-            </div>
-          </main>
+          <ul className={styles['testimonial__cards']}>
+            {Testimonials.slice(0, 4).map(testimonial => (
+              <li className={styles['testimonial__card']} key={testimonial.id}>
+                <TestimonialCard
+                  description={testimonial.description}
+                  firstName={testimonial.firstName}
+                  lastName={testimonial.lastName}
+                  imageUrl={testimonial.imageUrl}
+                />
+              </li>
+            ))}
+          </ul>
         </div>
       </MainContainer>
     </section>

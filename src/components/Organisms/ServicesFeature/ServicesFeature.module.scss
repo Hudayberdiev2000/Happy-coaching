@@ -11,29 +11,9 @@
     gap: map.get($spacing, 'xxl');
   }
 
-  &__upper {
-    width: 49rem;
-  }
-
-  &__upheading {
-    color: $services-feature-upheading-color;
-    font-size: $fs-sm;
-    @include margin('bottom', 'xs');
-  }
-
-  &__heading {
-    color: $heading-color;
-    font-size: $h-2-font-size;
-    font-weight: $h-2-font-weight;
-    letter-spacing: -2%;
-    line-height: 5.953rem;
-    @include margin('bottom', 'md');
-  }
-
-  &__description {
-    color: $services-feature-color;
-    font-size: $fs-lg;
-    line-height: 3rem;
+  &__header {
+    align-self: flex-start;
+    max-width: 49rem;
   }
 
   &__bottom {

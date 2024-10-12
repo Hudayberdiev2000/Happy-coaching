@@ -4,14 +4,14 @@ import Image from 'next/image';
 import clsx from 'clsx';
 
 interface ServiceCartProps {
-  iconName: string;
+  iconUrl: string;
   heading: string;
   description: string;
   withBorder?: boolean;
 }
 
 const ServiceCart: React.FC<ServiceCartProps> = ({
-  iconName,
+  iconUrl,
   heading,
   description,
   withBorder = false,
@@ -25,10 +25,10 @@ const ServiceCart: React.FC<ServiceCartProps> = ({
       <div className={styles['service-cart__icon-wrapper']}>
         <Image
           className={styles['service-cart__icon']}
-          src={`/icons/${iconName}`}
+          src={iconUrl}
           width={72}
           height={72}
-          alt={iconName}
+          alt={iconUrl}
         />
       </div>
 

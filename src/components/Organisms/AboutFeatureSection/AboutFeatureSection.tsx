@@ -2,51 +2,7 @@ import React from 'react';
 import styles from './AboutFeatureSection.module.scss';
 import FeatureCard from '@/components/Molecules/FeatureCard';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
-
-const features = [
-  {
-    orientation: 'horizontal',
-    iconName: 'feature-ready-tt.svg',
-    title: 'Ready to start? Let’s talk!',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    orientation: 'horizontal',
-    iconName: 'feature-ready-tt.svg',
-    title: 'Ready to start? Let’s talk!',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    orientation: 'horizontal',
-    iconName: 'feature-ready-tt.svg',
-    title: 'Ready to start? Let’s talk!',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    orientation: 'horizontal',
-    iconName: 'feature-ready-tt.svg',
-    title: 'Ready to start? Let’s talk!',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    orientation: 'horizontal',
-    iconName: 'feature-ready-tt.svg',
-    title: 'Ready to start? Let’s talk!',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    orientation: 'horizontal',
-    iconName: 'feature-ready-tt.svg',
-    title: 'Ready to start? Let’s talk!',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-];
+import { Features as features } from '../../../../data';
 
 const AboutFeatureSection: React.FC = () => {
   return (
@@ -68,7 +24,7 @@ const AboutFeatureSection: React.FC = () => {
           <div className={styles['feature__cards']}>
             {features.map((feature, index) => (
               <FeatureCard
-                iconName={feature.iconName}
+                iconUrl={feature.iconUrl}
                 title={feature.title}
                 description={feature.description}
                 key={index}

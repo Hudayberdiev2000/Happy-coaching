@@ -25,14 +25,14 @@
   &__cards {
     @include padding('top', 'sm');
     @include padding('bottom', 'xxl');
-    @include center-flex;
-
-    flex-direction: column;
-    gap: map.get($spacing, 'xl');
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: map.get($spacing, 'lg');
+    column-gap: map.get($spacing, 'xl');
   }
 
-  &__card-row {
-    display: flex;
-    gap: map.get($spacing, 'lg');
+  &__card:nth-child(1),
+  &__card:nth-child(3) {
+    justify-self: end;
   }
 }

@@ -18,11 +18,13 @@
   }
 
   &__cards {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: map.get($spacing, 'md');
   }
 
-  &__cards-right {
+  &__card:nth-child(2),
+  &__card:nth-child(4) {
     position: relative;
     transform: translate(0, map.get($spacing, 'xl'));
   }

@@ -4,11 +4,11 @@ import React from 'react';
 import styles from './Accordion.module.scss';
 
 interface AccordionProps {
-  title: string;
+  question: string;
   answer: string;
 }
 
-const Accordion: React.FC<AccordionProps> = ({ title, answer }) => {
+const Accordion: React.FC<AccordionProps> = ({ question, answer }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   const handleToggleClick = () => {
@@ -21,7 +21,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, answer }) => {
         className={styles['accordion__button']}
         onClick={handleToggleClick}
       >
-        <span>{title}</span>
+        <span>{question}</span>
         <span className={styles['accordion__icon-wrapper']}>
           <svg
             width="22"

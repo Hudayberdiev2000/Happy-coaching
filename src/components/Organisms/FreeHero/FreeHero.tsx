@@ -4,6 +4,7 @@ import Input from '@/components/Atoms/Input';
 import Button from '@/components/Atoms/Button';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
 import FreeGuideHeroRight from '@/components/Molecules/FreeGuideHeroRight';
+import HeroLeft from '@/components/Molecules/HeroLeft';
 
 const FreeForm: React.FC = () => {
   return (
@@ -20,27 +21,19 @@ const FreeForm: React.FC = () => {
   );
 };
 
-const HeroLeft: React.FC = () => {
-  return (
-    <div className={styles['hero__left']}>
-      <h2 className={styles['hero__heading']}>
-        Results that speak for themselves
-      </h2>
-      <p className={styles['hero__description']}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua minim veniam.
-      </p>
-      <FreeForm />
-    </div>
-  );
-};
-
 const FreeHero: React.FC = () => {
   return (
     <section className={styles['hero']}>
       <MainContainer>
         <div className={styles['hero__container']}>
-          <HeroLeft />
+          <HeroLeft
+            headingSize="medium"
+            heading="Results that speak for themselves"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.
+"
+          >
+            <FreeForm />
+          </HeroLeft>
           <FreeGuideHeroRight />
         </div>
       </MainContainer>

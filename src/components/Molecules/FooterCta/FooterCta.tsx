@@ -19,7 +19,7 @@ const FooterCta: React.FC = () => {
           </div>
 
           <div className={styles['footer-cta__right']}>
-            <Input />
+            <Input placeholder="" />
             <Button size="small">Subscribe</Button>
           </div>
         </div>

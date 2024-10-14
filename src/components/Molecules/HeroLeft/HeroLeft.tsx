@@ -1,14 +1,13 @@
 import React, { ReactNode } from 'react';
 import styles from './HeroLeft.module.scss';
-import Button from '@/components/Atoms/Button';
+import Text from '@/components/Atoms/Text';
 
 interface HeroLeftProps {
   upheading?: string;
   heading: string;
-  headingSize?: 'small' | 'medium' | 'large';
+  headingSize?: 'small' | 'large';
   description: string;
   description2?: string;
-  btnLabel?: string;
   children?: ReactNode;
 }
 
@@ -23,17 +22,30 @@ const HeroLeft: React.FC<HeroLeftProps> = ({
   return (
     <div className={styles['hero-left']}>
       {upheading && (
-        <p className={styles['hero-left__subheading']}>{upheading}</p>
+        <Text
+          tone="subtle"
+          variant="bodySm"
+          className={styles['hero-left__upheading']}
+        >
+          {upheading}
+        </Text>
       )}
 
-      <h1
-        className={`${styles['hero-left__heading']} ${styles[`hero-left__heading--${headingSize}`]}`}
+      <Text
+        as="h1"
+        tone="primary"
+        variant={`${headingSize === 'large' ? 'headingXl' : 'headingLg'}`}
+        className={styles['hero-left__heading']}
       >
         {heading}
-      </h1>
-      <p className={styles['hero-left__text']}>{description}</p>
+      </Text>
+      <Text variant="bodyMd" className={styles['hero-left__text']}>
+        {description}
+      </Text>
       {description2 && (
-        <p className={styles['hero-left__text']}>{description2}</p>
+        <Text variant="bodySm" className={styles['hero-left__text']}>
+          {description2}
+        </Text>
       )}
       {children}
     </div>

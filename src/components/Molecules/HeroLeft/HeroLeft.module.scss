@@ -8,35 +8,17 @@
   gap: map.get($spacing, 'sm');
   @include padding('right', 'xl');
 
-  &__subheading {
-    color: $hero-subheading-color;
-    font-size: $fs-sm;
-    letter-spacing: -2%;
+  &__upheading {
+    letter-spacing: $ls-md;
   }
 
   &__heading {
-    color: $hero-heading-color;
-    font-size: $h-1-font-size;
-    font-weight: $h-1-font-weight;
-    letter-spacing: -1%;
-    line-height: 8.64rem;
-  }
-
-  &__heading--small {
-    font-size: $h-3-font-size;
-    line-height: 4.465rem;
-  }
-
-  &__heading--medium {
-    font-size: $h-2-font-size;
-    letter-spacing: -1%;
-    line-height: 5.6rem;
+    letter-spacing: $ls-lg;
+    align-self: flex-start;
   }
 
   &__text {
-    color: $hero-text-color;
-    font-size: $fs-sm;
-    line-height: 2.88rem;
+    line-height: $lh-md;
     max-width: 50rem;
   }
 }

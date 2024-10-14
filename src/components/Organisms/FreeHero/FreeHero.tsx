@@ -27,7 +27,7 @@ const FreeHero: React.FC = () => {
       <MainContainer>
         <div className={styles['hero__container']}>
           <HeroLeft
-            headingSize="medium"
+            headingSize="small"
             heading="Results that speak for themselves"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua minim veniam.
 "

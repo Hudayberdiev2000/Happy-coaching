@@ -20,6 +20,7 @@ interface TextProps {
     | 'bodyMd'
     | 'bodyLg';
   tone?: 'primary' | 'secondary' | 'subtle' | 'inverted' | 'success' | 'error';
+  className?: string;
 }
 
 const Text: React.FC<TextProps> = ({
@@ -31,6 +32,7 @@ const Text: React.FC<TextProps> = ({
   visuallyHidden,
   variant = 'bodySm',
   tone = 'secondary',
+  className,
 }) => {
   const classes = clsx(
     styles.text,
@@ -39,7 +41,8 @@ const Text: React.FC<TextProps> = ({
     styles[`text--${truncate ? 'truncate' : 'no-truncate'}`],
     styles[`text--${visuallyHidden ? 'hidden' : 'visible'}`],
     styles[`text--${variant}`],
-    styles[`text--${tone}`]
+    styles[`text--${tone}`],
+    className
   );
   return <Tag className={classes}>{children}</Tag>;
 };

@@ -24,7 +24,7 @@ const ServicesFeature: React.FC = () => {
 
           <div className={styles['feature__bottom']}>
             <div className={styles['feature__cards']}>
-              {Features.map((feature, index) => (
+              {Features.slice(0, 4).map((feature, index) => (
                 <FeatureCard
                   orientation="horizontal"
                   iconUrl={feature.iconUrl}

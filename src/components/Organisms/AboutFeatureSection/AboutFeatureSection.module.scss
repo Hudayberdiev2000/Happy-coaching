@@ -18,7 +18,7 @@
   &__upheading {
     @include margin('bottom', 'xs');
 
-    color: $blue-gray-50;
+    color: $text-subtle;
     font-size: $fs-sm;
   }
 
@@ -32,7 +32,7 @@
   }
 
   &__text {
-    color: $blue-gray;
+    color: $text-secondary;
     font-size: $fs-lg;
     line-height: 3rem;
     margin: 0 auto;

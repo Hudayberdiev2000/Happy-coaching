@@ -1,0 +1,118 @@
+@import '../../../foundation/sass/all';
+
+.text {
+  &--start {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--end {
+    text-align: right;
+  }
+
+  &--regular {
+    font-weight: $fw-normal;
+  }
+
+  &--medium {
+    font-weight: $fw-medium;
+  }
+
+  &--bold {
+    font-weight: $fw-bold;
+  }
+
+  &--extraBold {
+    font-weight: $fw-extrabold;
+  }
+
+  &--truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &--hidden {
+    visibility: hidden;
+  }
+
+  &--visible {
+    visibility: visible;
+  }
+
+  &--headingSm {
+    font-size: $h-4-font-size;
+    font-weight: $h-4-font-weight;
+    letter-spacing: -3%;
+    line-height: 1.3;
+  }
+
+  &--headingMd {
+    font-size: $h-3-font-size;
+    font-weight: $h-3-font-weight;
+    letter-spacing: -2%;
+    line-height: 1.2;
+  }
+
+  &--headingLg {
+    font-size: $h-2-font-size;
+    font-weight: $h-2-font-weight;
+    letter-spacing: -2%;
+    line-height: 1.16;
+  }
+
+  &--headingXl {
+    font-size: $h-1-font-size;
+    font-weight: $h-1-font-weight;
+    letter-spacing: -1%;
+    line-height: 1.2;
+  }
+
+  &--body2xs {
+    font-size: $fs-xxs;
+    letter-spacing: -1%;
+  }
+
+  &--bodyXs {
+    font-size: $fs-xs;
+  }
+
+  &--bodySm {
+    font-size: $fs-sm;
+  }
+
+  &--bodyMd {
+    font-size: $fs-md;
+  }
+
+  &--bodyLg {
+    font-size: $fs-lg;
+  }
+
+  &--primary {
+    color: $text-primary;
+  }
+
+  &--secondary {
+    color: $text-secondary;
+  }
+
+  &--subtle {
+    color: $text-subtle;
+  }
+
+  &--inverted {
+    color: $text-inverted;
+  }
+
+  &--success {
+    color: $text-success;
+  }
+
+  &--error {
+    color: $text-error;
+  }
+}

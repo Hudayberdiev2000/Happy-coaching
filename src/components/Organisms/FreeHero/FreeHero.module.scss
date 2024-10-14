@@ -11,6 +11,7 @@
 
   &__form {
     @include padding('top', 'md');
+
     display: flex;
     flex-direction: column;
     gap: map.get($spacing, 'md');

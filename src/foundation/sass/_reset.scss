@@ -116,6 +116,7 @@ section {
 body {
   font-family: sans-serif;
   line-height: 1;
+  background-color: var(--body-background-color);
 }
 
 menu,
@@ -148,6 +149,7 @@ html {
 
 :root {
   /* Background Colors */
+  --body-background-color: #{white};
   --background-purple: #{$secondary-600};
   --background-floral: #{$white-floral};
   --background-green-tint: #{$primary-400};
@@ -171,5 +173,17 @@ html {
 }
 
 .dark-mode {
-  --background-floral: #333;
+  /* Background colors*/
+  --body-background-color: #454545;
+  --background-white: #454545;
+  --background-floral: #595858;
+
+  /* Border colors*/
+  --border-floral: #888;
+
+  /* Text colors*/
+  --text-primary: #f3f3f3;
+  --text-secondary: #d2d2d2;
+  --text-subtle: #a6a6a6;
+  --text-inverted: #fff;
 }

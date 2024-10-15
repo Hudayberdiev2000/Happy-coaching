@@ -88,26 +88,26 @@
   }
 
   &--primary {
-    color: $text-primary;
+    color: $text-primary-color;
   }
 
   &--secondary {
-    color: $text-secondary;
+    color: $text-secondary-color;
   }
 
   &--subtle {
-    color: $text-subtle;
+    color: $text-subtle-color;
   }
 
   &--inverted {
-    color: $text-inverted;
+    color: $text-inverted-color;
   }
 
   &--success {
-    color: $text-success;
+    color: $text-success-color;
   }
 
   &--error {
-    color: $text-error;
+    color: $text-error-color;
   }
 }

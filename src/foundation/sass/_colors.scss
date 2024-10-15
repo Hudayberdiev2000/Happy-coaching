@@ -15,48 +15,31 @@
 // $body-bg-color: var(--body-bg-color, $white) !default;
 
 /* =============================================
-=                 Heading                     =
-============================================= */
-$heading-color: var(--heading-color, $secondary-500) !default;
-
-/* =============================================
 =                 Buttons                     =
 ============================================= */
-$button-color: var(--button-color, $text-inverted) !default;
-$button-bg-color: var(--button-bg-color, $background-green) !default;
-$button-hover-color: var(--button-hover-color, $text-secondary) !default;
-$button-hover-bg-color: var(
-  --button-hover-bg-color,
-  $background-green-tint
-) !default;
+$button-color: var(--text-inverted) !default;
+$button-bg-color: var(--background-green) !default;
+$button-hover-color: var(--text-secondary) !default;
+$button-hover-bg-color: var(--background-green-tint) !default;
 
 /* =============================================
 =                 Logo                         =
 ============================================= */
-$logo-icon-bg: var(--logo-icon-bg, $background-green) !default;
-$logo-color: var(--logo-color, $text-primary) !default;
+$logo-icon-bg: var(--background-green) !default;
+$logo-color: var(--text-primary) !default;
 
 /* =============================================
 =                 NavbarItem                   =
 ============================================= */
-$navbar-item-color: var(--navbar-link-color, $text-secondary);
-$navbar-item-border-color: var(--navbar-border-color, $border-green) !default;
+$navbar-item-color: var(--text-secondary);
+$navbar-item-border-color: var(--border-green) !default;
 
 /* =============================================
 =                 SuccessRate                  =
 ============================================= */
-$success-rate-percentage-color: var(
-  --success-rate-percentage-color,
-  $text-primary
-) !default;
-$success-rate-description-color: var(
-  --success-rate-description-color,
-  $text-secondary
-) !default;
-$success-rate-bg-color: var(
-  --success-rate-bg-color,
-  $background-white
-) !default;
+$success-rate-percentage-color: var(--text-primary) !default;
+$success-rate-description-color: var(--text-secondary) !default;
+$success-rate-bg-color: var(--background-white) !default;
 
 /* =============================================
 =                 Hero                     =
@@ -66,204 +49,148 @@ $hero-bg-color: var(--background-floral) !default;
 /* =============================================
 =                 ServiceCart                  =
 ============================================= */
-$service-cart-color: var(--service-cart-color, $text-secondary) !default;
-$service-cart-border-color: var(
-  --service-cart-border-color,
-  $border-floral
-) !default;
-$service-cart-heading-hover-color: var(
-  --service-cart-heading-hover-color,
-  $text-primary
-) !default;
+$service-cart-color: var(--text-secondary) !default;
+$service-cart-border-color: var(--border-floral) !default;
+$service-cart-heading-hover-color: var(--text-primary) !default;
 
 /* =============================================
 =                 Introduction                 =
 ============================================= */
-$introduction-bg-color: var(
-  --introduction-bg-color,
-  $background-floral
-) !default;
+$introduction-bg-color: var(--background-floral) !default;
 /* =============================================
 =                 ReviewCard                   =
 ============================================= */
-$review-card-border-color: var(
-  --review-card-border-color,
-  $border-smoke
-) !default;
-$review-card-number-hover-color: var(
-  --review-card-number-hover-color,
-  $text-success
-) !default;
-$review-card-bg-color: var(--review-card-bg-color, $background-white) !default;
+$review-card-border-color: var(--border-smoke) !default;
+$review-card-number-hover-color: var(--text-success) !default;
+$review-card-bg-color: var(--background-white) !default;
 
 /* =============================================
 =                 HomeReview                   =
 ============================================= */
-$home-review-bg-color: var(--home-review-bg-color, $background-floral) !default;
+$home-review-bg-color: var(--background-floral) !default;
 
 /* =============================================
 =                 BlogCard                     =
 ============================================= */
-$blog-card-border-color: var(--blog-card-border-color, $border-floral) !default;
+$blog-card-border-color: var(--border-floral) !default;
 
 /* =============================================
 =                 Input                        =
 ============================================= */
-$input-border-color: var(--input-border-color, $border-gray) !default;
-$input-hover-border-color: var(
-  --input-hover-border-color,
-  $border-blue
-) !default;
+$input-border-color: var(--border-gray) !default;
+$input-hover-border-color: var(--border-blue) !default;
 
 /* =============================================
 =                 FooterCta                    =
 ============================================= */
-$footer-cta-bg-color: var(--footer-cta-bg-color, $background-floral) !default;
+$footer-cta-bg-color: var(--background-floral) !default;
 
 /* =============================================
 =                 FooterMain                   =
 ============================================= */
 
-$footer-main-color: var(--footer-main-color, $text-subtle) !default;
-$footer-main-link-hover-color: var(
-  --footer-main-link-hover-color,
-  $text-secondary
-) !default;
+$footer-main-color: var(--text-subtle) !default;
+$footer-main-link-hover-color: var(--text-secondary) !default;
 
 /* =============================================
 =                 CopyrightInfo                =
 ============================================= */
-$copyright-border-color: var(--copyright-border-color, $border-gray) !default;
+$copyright-border-color: var(--border-gray) !default;
 
 /* =============================================
 =                 FreeGuideHeroRight            =
 ============================================= */
 
-$freeguide-hero-right-bg-color: var(
-  --freeguide-hero-left-bg-color,
-  $background-floral
-) !default;
-$freeguide-hero-after-bg-color: var(
-  --freeguide-hero-left-after-bg-color,
-  $background-green
-) !default;
-$freeguide-hero-left-inner-bg-color: var(
-  --freeguide-hero-left-inner-bg-color,
-  $background-purple
-) !default;
+$freeguide-hero-right-bg-color: var(--background-floral) !default;
+$freeguide-hero-after-bg-color: var(--background-green) !default;
+$freeguide-hero-left-inner-bg-color: var(--background-purple) !default;
 
 /* =============================================
 =                 CTA                          =
 ============================================= */
-$cta-bg-color: var(--cta-bg-color, $background-floral) !default;
-$cta-heading-color: var(--cta-heading-color, $text-primary) !default;
+$cta-bg-color: var(--background-floral) !default;
+$cta-heading-color: var(--text-primary) !default;
 
 /* =============================================
 =                 ServicesHero                 =
 ============================================= */
-$services-hero-bg-color: var(
-  --services-hero-bg-color,
-  $background-floral
-) !default;
+$services-hero-bg-color: var(--background-floral) !default;
 
 /* =============================================
 =            Accordion                         =
 ============================================= */
-$accordion-color: var(--accordion-color, $text-secondary) !default;
+$accordion-color: var(--text-secondary) !default;
 
 /* =============================================
 =            FAQ                               =
 ============================================= */
-$faq-border-color: var(--faq-border-color, $border-smoke) !default;
+$faq-border-color: var(--border-smoke) !default;
 
 /* =============================================
 =                 FAQSection                   =
 ============================================= */
-$faq-section-color: var(--faq-section-color, $text-secondary) !default;
-$faq-section-footer-bg: var(
-  --faq-section-footer-bg,
-  $background-floral
-) !default;
+$faq-section-color: var(--text-secondary) !default;
+$faq-section-footer-bg: var(--background-floral) !default;
 
 /* =============================================
 =            TestimonialCard                   =
 ============================================= */
-$testimonial-card-border-color: var(
-  --testimonial-card-border-color,
-  $border-smoke
-) !default;
+$testimonial-card-border-color: var(--border-smoke) !default;
 
 /* =============================================
 =            FreeFeatureSection                =
 ============================================= */
-$free-feature-section-bg-color: var(
-  --free-feature-section-bg-color,
-  $background-floral
-) !default;
+$free-feature-section-bg-color: var(--background-floral) !default;
 
 /* =============================================
 =            FreeCta                           =
 ============================================= */
-$free-cta-color: var(--free-cta-color, $text-secondary) !default;
-$free-cta-heading-highlight-color: var(
-  --free-cta-heading-highlight-color,
-  $text-primary
-) !default;
-$free-cta-footer-color: var(--free-cta-footer-color, $text-subtle) !default;
+$free-cta-color: var(--text-secondary) !default;
+$free-cta-heading-highlight-color: var(--text-primary) !default;
+$free-cta-footer-color: var(--text-subtle) !default;
 
 /* =============================================
 =            AboutHeroSection                  =
 ============================================= */
-$about-hero-section-bg-color: var(
-  --about-hero-section-bg-color,
-  $background-floral
-) !default;
-$about-hero-icon-wrapper-bg-color: var(
-  --about-hero-icon-wrapper-bg-color,
-  $background-white
-) !default;
+$about-hero-section-bg-color: var(--background-floral) !default;
+$about-hero-icon-wrapper-bg-color: var(--background-white) !default;
 
 /* =============================================
 =            SocialProofSection                =
 ============================================= */
-$social-proof-section-color: var(
-  --social-proof-section-color,
-  $text-secondary
-) !default;
+$social-proof-section-color: var(--text-secondary) !default;
 
 /* =============================================
 =            AboutReviewSection                =
 ============================================= */
-$about-review-section-bg-color: var(
-  --about-review-section-bg-color,
-  $background-floral
-) !default;
+$about-review-section-bg-color: var(--background-floral) !default;
 
 /* =============================================
 =            QualificationItem                 =
 ============================================= */
-$qualification-item-color: var(
-  --qualification-item-color,
-  $text-secondary
-) !default;
+$qualification-item-color: var(--text-secondary) !default;
 
 /* =============================================
 =            QualificationCard                 =
 ============================================= */
-$qualification-card-primary-bg-color: var(
-  --qualification-card-primary-bg-color,
-  $background-white
-) !default;
+$qualification-card-primary-bg-color: var(--background-white) !default;
 
 /* =============================================
 =            QualificationSection              =
 ============================================= */
-$qualification-section-bg-color: var(
-  --qualification-section-bg-color,
-  $background-floral
-) !default;
+$qualification-section-bg-color: var(--background-floral) !default;
 
 /* =============================================
 =            FeatureCard                       =
 ============================================= */
-$feature-card-color: var(--feature-card-color, $text-secondary) !default;
+$feature-card-color: var(--text-secondary) !default;
+
+/* =============================================
+=               Text                           =
+============================================= */
+$text-primary-color: var(--text-primary) !default;
+$text-secondary-color: var(--text-secondary) !default;
+$text-subtle-color: var(--text-subtle) !default;
+$text-error-color: var(--text-error) !default;
+$text-success-color: var(--text-success) !default;
+$text-inverted-color: var(--text-inverted) !default;

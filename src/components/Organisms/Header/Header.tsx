@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import styles from './Header.module.scss';
 import Logo from '@/components/Atoms/Logo';
@@ -8,7 +9,9 @@ import Button from '@/components/Atoms/Button';
 import Image from 'next/image';
 
 const Header: React.FC = () => {
-  const handleButtonClick = () => {};
+  const handleButtonClick = () => {
+    document.documentElement.classList.toggle('dark-mode');
+  };
   return (
     <header className={styles.header}>
       <MainContainer className={styles['header__container']}>
@@ -21,7 +24,10 @@ const Header: React.FC = () => {
             <Button>Get your free guide</Button>
           </Link>
 
-          <button className={styles['header__dark-mode-button']}>
+          <button
+            onClick={handleButtonClick}
+            className={styles['header__dark-mode-button']}
+          >
             <Image
               className={styles['header__dark-mode-icon']}
               height={30}

@@ -2,14 +2,14 @@
 @import '../../../foundation/sass/all';
 
 .footer-cta {
-  align-items: center;
   background-color: $footer-cta-bg-color;
-  display: flex;
   height: 18rem;
 
   &__container {
+    justify-self: stretch;
     align-items: center;
     display: flex;
+    justify-content: space-between;
   }
 
   &__left {
@@ -17,17 +17,6 @@
     flex-direction: column;
     gap: map.get($spacing, 'sm');
     width: 73.8rem;
-  }
-
-  &__heading {
-    color: $heading-color;
-    font-size: 3rem;
-    font-weight: $fw-extrabold;
-  }
-
-  &__text {
-    color: $footer-cta-color;
-    font-size: $fs-md;
   }
 
   &__right {

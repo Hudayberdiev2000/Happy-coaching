@@ -18,7 +18,8 @@ interface TextProps {
     | 'bodyXs'
     | 'bodySm'
     | 'bodyMd'
-    | 'bodyLg';
+    | 'bodyLg'
+    | 'bodyXl';
   tone?: 'primary' | 'secondary' | 'subtle' | 'inverted' | 'success' | 'error';
   className?: string;
 }

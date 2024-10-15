@@ -2,13 +2,20 @@ import React from 'react';
 import styles from './CopyrightInfo.module.scss';
 import Image from 'next/image';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
+import Text from '@/components/Atoms/Text';
 
 const CopyrightInfo: React.FC = () => {
   return (
     <div className={styles['copyright-info']}>
       <MainContainer>
         <div className={styles['copyright-info__container']}>
-          <p className={styles['copyright-info__text']}>Copyright © 2024</p>
+          <Text
+            tone="primary"
+            variant="body2xs"
+            className={styles['copyright-info__text']}
+          >
+            Copyright © 2024
+          </Text>
           <div className={styles['copyright-info__icons']}>
             <Image
               src={`/icons/internet.svg`}

@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './BlogCard.module.scss';
 import Image from 'next/image';
+import Text from '@/components/Atoms/Text';
 
 interface BlogCardProps {
   imageUrl: string;
@@ -25,8 +26,15 @@ const BlogCard: React.FC<BlogCardProps> = ({
         />
       </div>
       <div className={styles['blog-card__info-box']}>
-        <h3 className={styles['blog-card__title']}>{title}</h3>
-        <p className={styles['blog-card__description']}>{description}</p>
+        <Text
+          as="h4"
+          tone="primary"
+          variant="headingSm"
+          className={styles['blog-card__title']}
+        >
+          {title}
+        </Text>
+        <Text className={styles['blog-card__description']}>{description}</Text>
       </div>
     </div>
   );

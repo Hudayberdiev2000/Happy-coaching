@@ -3,25 +3,25 @@ import styles from './FooterCta.module.scss';
 import Button from '@/components/Atoms/Button';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
 import Input from '@/components/Atoms/Input';
+import Text from '@/components/Atoms/Text';
 
 const FooterCta: React.FC = () => {
   return (
     <div className={styles['footer-cta']}>
-      <MainContainer>
-        <div className={styles['footer-cta__container']}>
-          <div className={styles['footer-cta__left']}>
-            <h3 className={styles['footer-cta__heading']}>
-              Get notified when I publish new articles
-            </h3>
-            <p className={styles['footer-cta__text']}>
-              Stay up to date with the latest news, announcements, and articles.
-            </p>
-          </div>
+      <MainContainer className={styles['footer-cta__container']}>
+        <div className={styles['footer-cta__left']}>
+          <Text as="h3" variant="headingMd" tone="primary">
+            Get notified when I publish new articles
+          </Text>
 
-          <div className={styles['footer-cta__right']}>
-            <Input placeholder="" />
-            <Button size="small">Subscribe</Button>
-          </div>
+          <Text tone="secondary" variant="bodyMd">
+            Stay up to date with the latest news, announcements, and articles.
+          </Text>
+        </div>
+
+        <div className={styles['footer-cta__right']}>
+          <Input placeholder="Your email" />
+          <Button size="small">Subscribe</Button>
         </div>
       </MainContainer>
     </div>

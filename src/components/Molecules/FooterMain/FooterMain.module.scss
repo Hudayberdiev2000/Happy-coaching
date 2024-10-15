@@ -23,11 +23,6 @@
     gap: map.get($spacing, 'md');
   }
 
-  &__div-heading {
-    font-size: $fs-sm;
-    font-weight: $fw-extrabold;
-  }
-
   &__list {
     display: flex;
     flex-direction: column;

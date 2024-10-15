@@ -14,11 +14,8 @@
   }
 
   &__heading {
-    color: $heading-color;
-    font-size: $h-2-font-size;
-    font-weight: $h-2-font-weight;
-    letter-spacing: -1%;
-    line-height: 5.6rem;
+    letter-spacing: $ls-lg;
+    line-height: $lh-xs;
     margin: 0 auto;
     max-width: 73rem;
     @include margin('bottom', 'sm');
@@ -42,11 +39,6 @@
     display: flex;
     flex-direction: column;
     gap: map.get($spacing, 'xxs');
-
-    &__text {
-      color: $free-cta-footer-color;
-      font-size: $fs-sm;
-    }
   }
 
   &__img {

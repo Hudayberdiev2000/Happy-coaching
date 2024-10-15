@@ -20,16 +20,11 @@
   }
 
   &__heading {
-    color: $cta-heading-color;
-    font-size: $h-3-font-size;
-    font-weight: $h-3-font-weight;
-    line-height: 4.465rem;
+    line-height: $lh-xs;
     @include margin('bottom', 'md');
   }
 
   &__text {
-    color: $cta-color;
-    font-size: $fs-lg;
     @include margin('bottom', 'xl');
   }
 

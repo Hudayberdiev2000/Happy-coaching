@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './QualificationCard.module.scss';
 import QualificationItem from '@/components/Atoms/QualificationItem';
+import Text from '@/components/Atoms/Text';
 
 interface QualificationCardProps {
   advises: string[];
@@ -13,13 +14,13 @@ const QualificationCard: React.FC<QualificationCardProps> = ({
 }) => {
   return (
     <div className={`${styles['card']} ${styles[`card--${type}`]}`}>
-      <h4 className={styles['card__heading']}>
+      <Text variant="headingSm" tone="primary" alignment="center">
         This is{' '}
         {type === 'secondary' && (
           <span className={styles['card__not-word']}>NOT</span>
         )}{' '}
         for you if...
-      </h4>
+      </Text>
 
       <div className={styles['card__items']}>
         {advises.map((advise, index) => (

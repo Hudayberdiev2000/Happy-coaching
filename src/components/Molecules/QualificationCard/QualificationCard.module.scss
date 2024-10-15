@@ -6,17 +6,12 @@
   height: 54rem;
   padding: map.get($spacing, 'xl');
   width: 44.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: map.get($spacing, 'xxl');
 
   &--secondary {
     background-color: transparent;
-  }
-
-  &__heading {
-    color: $heading-color;
-    font-size: $h-4-font-size;
-    font-weight: $h-4-font-weight;
-    margin-bottom: map.get($spacing, 'xxl');
-    text-align: center;
   }
 
   &__not-word {

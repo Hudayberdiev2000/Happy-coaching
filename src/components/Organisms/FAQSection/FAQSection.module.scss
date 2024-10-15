@@ -17,17 +17,6 @@
     text-align: center;
   }
 
-  &__heading {
-    color: $heading-color;
-    font-size: $h-2-font-size;
-    font-weight: $h-2-font-weight;
-  }
-
-  &__subheading {
-    color: $faq-section-color;
-    font-size: $fs-lg;
-  }
-
   &__footer {
     align-self: stretch;
     background-color: $faq-section-footer-bg;
@@ -38,15 +27,10 @@
     @include center-flex;
 
     &__heading {
-      color: $heading-color;
-      font-size: $fs-lg;
-      font-weight: $fw-bold;
-      @include margin('bottom', 'xxs');
+      @include margin('bottom', 'xs');
     }
 
     &__description {
-      color: $faq-section-color;
-      font-size: $fs-md;
       @include margin('bottom', 'lg');
     }
   }

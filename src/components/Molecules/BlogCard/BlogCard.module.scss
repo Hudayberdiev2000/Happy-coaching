@@ -21,18 +21,13 @@
   }
 
   &__title {
-    color: $blog-card-title-color;
-    font-size: $fs-xl;
-    font-weight: $fw-bold;
-    letter-spacing: -3%;
-    line-height: 3.2rem;
+    letter-spacing: $ls-lg;
+    line-height: $lh-sm;
     @include margin('bottom', 'xs');
   }
 
   &__description {
-    color: $blog-card-description-color;
-    font-size: $fs-sm;
-    letter-spacing: -2%;
-    line-height: 2.4rem;
+    letter-spacing: $ls-md;
+    line-height: $lh-md;
   }
 }

@@ -14,23 +14,17 @@
   width: 40rem;
 
   &__rating-number {
-    color: $review-card-color;
-    font-size: $fs-xxl;
-    font-weight: $fw-black;
+    // font-weight: $fw-black;
     transition: color 500ms ease;
   }
 
   &__comment {
-    color: $review-card-color;
-    font-size: $fs-xl;
     letter-spacing: -3%;
-    line-height: 3.4rem;
+    line-height: $lh-md;
   }
 
   &__commenter-name {
-    font-size: $fs-xl;
-    font-weight: $fw-bold;
-    letter-spacing: -3%;
+    letter-spacing: $ls-sm;
   }
 
   &__img-wrapper {

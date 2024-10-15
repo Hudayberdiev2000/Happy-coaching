@@ -5,9 +5,7 @@
   &__container {
     align-items: center;
     border-top: 1px solid $copyright-border-color;
-    color: $copyright-color;
     display: flex;
-    font-size: $fs-xxs;
     justify-content: space-between;
     @include padding('top', 'lg');
   }

@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: column;
     gap: map.get($spacing, xxl);
+    justify-content: center;
   }
 
   &__header {
@@ -17,24 +18,16 @@
 
   &__upheading {
     @include margin('bottom', 'xs');
-
-    color: $text-subtle;
-    font-size: $fs-sm;
   }
 
   &__heading {
     @include margin('bottom', 'md');
 
-    color: $heading-color;
-    font-size: $h-3-font-size;
-    font-weight: $h-3-font-weight;
-    letter-spacing: -2%;
+    letter-spacing: $ls-md;
   }
 
   &__text {
-    color: $text-secondary;
-    font-size: $fs-lg;
-    line-height: 3rem;
+    line-height: $lh-md;
     margin: 0 auto;
     max-width: 76.8rem;
   }

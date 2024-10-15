@@ -16,7 +16,6 @@ const HomeHero: React.FC = () => {
         life... Discover the simple 3 steps that I discovered to hack
         productivity. It just works and it is begin using backed by science.
         Wanna transform your life?"
-        btnLabel="Get your free guide now"
       >
         <Button size="large">Get your free guide now</Button>
       </HeroLeft>

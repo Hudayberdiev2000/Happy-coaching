@@ -3,6 +3,30 @@ import styles from './FooterMain.module.scss';
 import Logo from '@/components/Atoms/Logo';
 import Link from 'next/link';
 import MainContainer from '@/components/Atoms/MainContainer/MainContainer';
+import Text from '@/components/Atoms/Text';
+
+const pages = [
+  {
+    title: 'Home',
+    href: '/',
+  },
+  {
+    title: 'Services',
+    href: '/services',
+  },
+  {
+    title: 'About me',
+    href: '/about-me',
+  },
+  {
+    title: 'Extra Sales/Landingpage',
+    href: '/extra-sales',
+  },
+  {
+    title: 'Free guide',
+    href: '/free-guide',
+  },
+];
 
 const FooterMain: React.FC = () => {
   return (
@@ -11,43 +35,34 @@ const FooterMain: React.FC = () => {
         <div className={styles['footer-main__container']}>
           <div className={styles['footer-main__about']}>
             <Logo />
-            <p className={styles['footer-main__about-text']}>
+            <Text tone="subtle">
               Design amazing digital experiences that create more happy in the
               world.
-            </p>
+            </Text>
           </div>
+
           <div className={styles['footer-main__info-div']}>
-            <p className={styles['footer-main__div-heading']}>Pages</p>
+            <Text variant="bodySm" fontWeight="extraBold">
+              Pages
+            </Text>
             <ul className={styles['footer-main__list']}>
-              <li className={styles['footer-main__list-item']}>
-                <Link className={styles['footer-main__link']} href="#">
-                  Home
-                </Link>
-              </li>
-              <li className={styles['footer-main__list-item']}>
-                <Link className={styles['footer-main__link']} href="#">
-                  Services
-                </Link>
-              </li>
-              <li className={styles['footer-main__list-item']}>
-                <Link className={styles['footer-main__link']} href="#">
-                  About us
-                </Link>
-              </li>
-              <li className={styles['footer-main__list-item']}>
-                <Link className={styles['footer-main__link']} href="#">
-                  Extra Sales/Landingpage
-                </Link>
-              </li>
-              <li className={styles['footer-main__list-item']}>
-                <Link className={styles['footer-main__link']} href="#">
-                  Free guide
-                </Link>
-              </li>
+              {pages.map((page, index) => (
+                <li className={styles['footer-main__list-item']} key={index}>
+                  <Link
+                    className={styles['footer-main__link']}
+                    href={page.href}
+                  >
+                    {page.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
+
           <div className={styles['footer-main__info-div']}>
-            <p className={styles['footer-main__div-heading']}>Contact</p>
+            <Text variant="bodySm" fontWeight="extraBold">
+              Contact
+            </Text>
             <ul className={styles['footer-main__list']}>
               <li className={styles['footer-main__list-item']}>+123 456 789</li>
               <li className={styles['footer-main__list-item']}>

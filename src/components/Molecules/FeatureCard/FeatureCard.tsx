@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FeatureCard.module.scss';
 import Image from 'next/image';
+import Text from '@/components/Atoms/Text';
 
 interface FeatureCardProps {
   iconUrl: string;

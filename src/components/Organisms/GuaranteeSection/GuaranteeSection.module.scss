@@ -15,14 +15,6 @@
   }
 
   &__heading {
-    font-size: $h-3-font-size;
-    font-weight: $h-3-font-weight;
     @include margin('bottom', 'md');
-  }
-
-  &__text {
-    color: $guarantee-section-color;
-    font-size: $fs-lg;
-    text-align: center;
   }
 }

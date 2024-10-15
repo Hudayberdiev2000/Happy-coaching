@@ -2,6 +2,7 @@
 @import '../../../foundation/sass/all';
 
 .header {
+  height: 6rem;
   &__container {
     align-items: center;
     display: flex;
@@ -19,5 +20,22 @@
     align-self: stretch;
     display: flex;
     gap: map.get($spacing, 'md');
+  }
+
+  &__dark-mode-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    background-color: $background-floral;
+    border-radius: $br-full;
+    @include center-flex;
+    height: 3.5rem;
+    width: 3.5rem;
+    cursor: pointer;
+  }
+
+  &__dark-mode-icon {
+    width: 80%;
+    height: 80%;
   }
 }

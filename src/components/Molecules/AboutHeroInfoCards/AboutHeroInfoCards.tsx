@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './AboutHeroInfoCards.module.scss';
 import Image from 'next/image';
+import Text from '@/components/Atoms/Text';
 
 const AboutHeroInfoCards: React.FC = () => {
   return (
@@ -23,12 +24,8 @@ const AboutHeroInfoCards: React.FC = () => {
           alt="icon1"
         />
         <div className={styles['hero__icon2-wrapper__text-box']}>
-          <span className={styles['hero__icon2-wrapper__text1']}>
-            More than 250+
-          </span>
-          <span className={styles['hero__icon2-wrapper__text2']}>
-            Online Sessions
-          </span>
+          <Text>More than 250+</Text>
+          <Text tone="primary">Online Sessions</Text>
         </div>
       </div>
     </>

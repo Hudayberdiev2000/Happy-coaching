@@ -16,16 +16,14 @@ const HeroSection: React.FC<HeroSectionProps> = ({
 }) => {
   return (
     <section className={`${styles['hero']} ${styles[`hero--${height}`]}`}>
-      <MainContainer>
-        <div className={styles['hero__container']}>
-          {withWaveIcon && (
-            <div className={styles['hero__wave-icon']}>
-              <WaveIcon />
-            </div>
-          )}
+      <MainContainer className={styles['hero__container']}>
+        {withWaveIcon && (
+          <div className={styles['hero__wave-icon']}>
+            <WaveIcon />
+          </div>
+        )}
 
-          {children}
-        </div>
+        {children}
       </MainContainer>
     </section>
   );

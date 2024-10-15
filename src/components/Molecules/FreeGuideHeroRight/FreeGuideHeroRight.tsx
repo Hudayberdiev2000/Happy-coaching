@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './FreeGuideHeroRight.module.scss';
 import Image from 'next/image';
+import Text from '@/components/Atoms/Text';
 
 interface FreeGuideHeroRightProps {
   isBackground?: boolean;
@@ -14,9 +15,13 @@ const FreeGuideHeroRight: React.FC<FreeGuideHeroRightProps> = ({
       className={`${styles['hero-right']} ${isBackground ? styles['hero-right--with-bg'] : ''}`}
     >
       <div className={styles['hero-right__inner']}>
-        <p className={styles['hero-right__heading']}>
+        <Text
+          tone="inverted"
+          variant="headingLg"
+          className={styles['hero-right__heading']}
+        >
           Are you ready to transform your life?
-        </p>
+        </Text>
         <Image
           className={styles['hero-right__img']}
           src={'/images/free-hero-img.png'}
@@ -35,12 +40,12 @@ const FreeGuideHeroRight: React.FC<FreeGuideHeroRightProps> = ({
             />
           </div>
           <div className={styles['hero-right__text-box']}>
-            <p className={styles['hero-right__message-heading']}>
+            <Text variant="bodyXs" tone="inverted" fontWeight="bold">
               Ready to start? Lets talk!
-            </p>
-            <p className={styles['hero-right__message-text']}>
+            </Text>
+            <Text tone="inverted" variant="body2xs">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-            </p>
+            </Text>
           </div>
         </div>
       </div>

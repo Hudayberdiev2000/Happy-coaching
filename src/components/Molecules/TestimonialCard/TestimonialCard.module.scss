@@ -9,9 +9,7 @@
   width: 45rem;
 
   &__description {
-    color: $testimonial-card-color;
-    font-size: $fs-sm;
-    line-height: 2.4rem;
+    line-height: $lh-md;
     @include margin('bottom', 'xl');
   }
 
@@ -23,15 +21,11 @@
   }
 
   &__first-name {
-    font-size: $fs-md;
-    font-weight: $fw-bold;
     @include margin('bottom', 'xxxs');
   }
 
   &__last-name {
-    color: $testimonial-card-last-name-color;
-    font-size: $fs-sm;
-    line-height: 2.4rem;
+    line-height: $lh-md;
     @include margin('bottom', 'sm');
   }
 

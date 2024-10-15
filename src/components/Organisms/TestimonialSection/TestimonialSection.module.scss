@@ -10,16 +10,11 @@
   }
 
   &__upheading {
-    color: $testimonial-section-upheading-color;
-    font-size: $fs-sm;
     @include margin('bottom', 'sm');
   }
 
   &__heading {
-    color: $heading-color;
-    font-size: $h-2-font-size;
-    font-weight: $h-2-font-weight;
-    letter-spacing: -2%;
+    letter-spacing: $ls-md;
   }
 
   &__cards {

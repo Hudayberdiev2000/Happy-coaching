@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './TestimonialCard.module.scss';
 import Image from 'next/image';
 import Stars from '@/components/Atoms/Stars';
+import Text from '@/components/Atoms/Text';
 
 interface TestimonialCardProps {
   description: string;
@@ -18,7 +19,14 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
 }) => {
   return (
     <div className={styles['card']}>
-      <p className={styles['card__description']}>{description}</p>
+      <Text
+        tone="secondary"
+        variant="bodySm"
+        className={styles['card__description']}
+        alignment="center"
+      >
+        {description}
+      </Text>
 
       <Image
         className={styles['card__img']}
@@ -28,8 +36,24 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
         alt={imageUrl}
       />
 
-      <p className={styles['card__first-name']}>{firstName}</p>
-      <p className={styles['card__last-name']}> {lastName}</p>
+      <Text
+        variant="bodyMd"
+        fontWeight="bold"
+        className={styles['card__first-name']}
+        alignment="center"
+      >
+        {firstName}
+      </Text>
+
+      <Text
+        tone="subtle"
+        variant="bodySm"
+        className={styles['card__last-name']}
+        alignment="center"
+      >
+        {' '}
+        {lastName}
+      </Text>
 
       <div className={styles['card__stars']}>
         <Stars rating={5} />

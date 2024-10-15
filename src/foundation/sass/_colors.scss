@@ -62,9 +62,6 @@ $success-rate-bg-color: var(
 =                 Hero                     =
 ============================================= */
 $hero-bg-color: var(--hero-bg-color, $background-floral) !default;
-$hero-subheading-color: var(--hero-subheading-color, $text-subtle) !default;
-$hero-heading-color: var(--hero-heading-color, $text-primary) !default;
-$hero-text-color: var(--hero-bg-color, $text-secondary) !default;
 
 /* =============================================
 =                 ServiceCart                  =
@@ -86,15 +83,6 @@ $introduction-bg-color: var(
   --introduction-bg-color,
   $background-floral
 ) !default;
-$introduction-heading-color: var(
-  --introduction-heading-color,
-  $text-primary
-) !default;
-$introduction-paragraph-color: var(
-  --introduction-paragraph-color,
-  $text-secondary
-) !default;
-
 /* =============================================
 =                 ReviewCard                   =
 ============================================= */
@@ -102,31 +90,21 @@ $review-card-border-color: var(
   --review-card-border-color,
   $border-smoke
 ) !default;
-$review-card-color: var(--review-card-color, $text-secondary) !default;
 $review-card-number-hover-color: var(
   --review-card-number-hover-color,
-  $text-primary
+  $text-success
 ) !default;
 $review-card-bg-color: var(--review-card-bg-color, $background-white) !default;
 
 /* =============================================
 =                 HomeReview                   =
 ============================================= */
-$home-review-heading-color: var(
-  --home-review-heading-color,
-  $text-primary
-) !default;
 $home-review-bg-color: var(--home-review-bg-color, $background-floral) !default;
 
 /* =============================================
 =                 BlogCard                     =
 ============================================= */
 $blog-card-border-color: var(--blog-card-border-color, $border-floral) !default;
-$blog-card-title-color: var(--blog-card-title-color, $text-primary) !default;
-$blog-card-description-color: var(
-  --blog-card-description-color,
-  $text-secondary
-) !default;
 
 /* =============================================
 =                 Input                        =
@@ -140,7 +118,6 @@ $input-hover-border-color: var(
 /* =============================================
 =                 FooterCta                    =
 ============================================= */
-$footer-cta-color: var(--footer-cta-color, $text-secondary) !default;
 $footer-cta-bg-color: var(--footer-cta-bg-color, $background-floral) !default;
 
 /* =============================================
@@ -156,24 +133,19 @@ $footer-main-link-hover-color: var(
 /* =============================================
 =                 CopyrightInfo                =
 ============================================= */
-$copyright-color: var(--copyright-color, $text-primary) !default;
 $copyright-border-color: var(--copyright-border-color, $border-gray) !default;
 
 /* =============================================
-=                 FreeGuideHeroLeft            =
+=                 FreeGuideHeroRight            =
 ============================================= */
 
-$freeguide-hero-left-bg-color: var(
+$freeguide-hero-right-bg-color: var(
   --freeguide-hero-left-bg-color,
   $background-floral
 ) !default;
-$freeguide-hero-left-color: var(
-  --freeguide-hero-left-color,
-  $text-inverted
-) !default;
 $freeguide-hero-after-bg-color: var(
   --freeguide-hero-left-after-bg-color,
-  $background-purple
+  $background-green
 ) !default;
 $freeguide-hero-left-inner-bg-color: var(
   --freeguide-hero-left-inner-bg-color,
@@ -185,7 +157,6 @@ $freeguide-hero-left-inner-bg-color: var(
 ============================================= */
 $cta-bg-color: var(--cta-bg-color, $background-floral) !default;
 $cta-heading-color: var(--cta-heading-color, $text-primary) !default;
-$cta-color: var(--cta-color, $text-subtle) !default;
 
 /* =============================================
 =                 ServicesHero                 =
@@ -193,23 +164,6 @@ $cta-color: var(--cta-color, $text-subtle) !default;
 $services-hero-bg-color: var(
   --services-hero-bg-color,
   $background-floral
-) !default;
-
-/* =============================================
-=                 FeatureCard                  =
-============================================= */
-$feature-card-color: var(--feature-card-color, $text-secondary) !default;
-
-/* =============================================
-=                 ServicesFeature              =
-============================================= */
-$services-feature-color: var(
-  --services-feature-color,
-  $text-secondary
-) !default;
-$services-feature-upheading-color: var(
-  --services-feature-upheding-color,
-  $text-subtle
 ) !default;
 
 /* =============================================
@@ -232,32 +186,11 @@ $faq-section-footer-bg: var(
 ) !default;
 
 /* =============================================
-=            FreeHero                          =
-============================================= */
-$free-hero-color: var(--free-hero-color, $text-secondary) !default;
-
-/* =============================================
 =            TestimonialCard                   =
 ============================================= */
 $testimonial-card-border-color: var(
   --testimonial-card-border-color,
   $border-smoke
-) !default;
-$testimonial-card-color: var(
-  --testimonial-card-color,
-  $text-secondary
-) !default;
-$testimonial-card-last-name-color: var(
-  --testimonial-card-last-name-color,
-  $text-subtle
-) !default;
-
-/* =============================================
-=            TestimonialSection                =
-============================================= */
-$testimonial-section-upheading-color: var(
-  --testimonial-section-upheading-color,
-  $text-subtle
 ) !default;
 
 /* =============================================
@@ -288,22 +221,6 @@ $about-hero-section-bg-color: var(
 $about-hero-icon-wrapper-bg-color: var(
   --about-hero-icon-wrapper-bg-color,
   $background-white
-) !default;
-$about-hero-icon-wrapper-text1-color: var(
-  --about-hero-icon-wrapper-text1-color,
-  $text-secondary
-) !default;
-$about-hero-icon-wrapper-text2-color: var(
-  --about-hero-icon-wrapper-text2-color,
-  $text-primary
-) !default;
-
-/* =============================================
-=            SocialProofCard                   =
-============================================= */
-$social-proof-card-color: var(
-  --social-proof-card-color,
-  $text-primary
 ) !default;
 
 /* =============================================
@@ -341,19 +258,12 @@ $qualification-card-primary-bg-color: var(
 /* =============================================
 =            QualificationSection              =
 ============================================= */
-$qualification-section-upheading-color: var(
-  --qualification-section-upheading-color,
-  $text-subtle
-) !default;
 $qualification-section-bg-color: var(
   --qualification-section-bg-color,
   $background-floral
 ) !default;
 
 /* =============================================
-=            GuaranteeSection              =
+=            FeatureCard                       =
 ============================================= */
-$guarantee-section-color: var(
-  --guarantee-section-color,
-  $text-secondary
-) !default;
+$feature-card-color: var(--feature-card-color, $text-secondary) !default;

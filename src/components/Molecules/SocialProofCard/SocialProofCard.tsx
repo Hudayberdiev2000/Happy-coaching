@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './SocialProofCard.module.scss';
 import Image from 'next/image';
+import Text from '@/components/Atoms/Text';
 
 interface SocialProofCardProps {
   imageUrl: string;
@@ -20,7 +21,9 @@ const SocialProofCard: React.FC<SocialProofCardProps> = ({
         src={imageUrl}
         alt={title}
       />
-      <figcaption className={styles['card__title']}>{title}</figcaption>
+      <Text tone="primary" variant="bodyXl" fontWeight="semibold">
+        {title}
+      </Text>
     </figure>
   );
 };

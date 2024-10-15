@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Navbar.module.scss';
-import Link from 'next/link';
 import NavbarItem from '@/components/Atoms/NavbarItem';
 
 const NavbarItems = [

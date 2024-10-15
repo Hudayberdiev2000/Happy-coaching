@@ -64,15 +64,7 @@
       flex-direction: column;
       font-size: $fs-sm;
       gap: map.get($spacing, 'xxxs');
-      letter-spacing: -2%;
-    }
-
-    &__text1 {
-      color: $about-hero-icon-wrapper-text1-color;
-    }
-
-    &__text2 {
-      color: $about-hero-icon-wrapper-text2-color;
+      letter-spacing: $ls-md;
     }
   }
 }

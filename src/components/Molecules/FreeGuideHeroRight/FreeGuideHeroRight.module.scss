@@ -2,13 +2,12 @@
 @import '../../../foundation/sass/all';
 
 .hero-right {
-  color: $freeguide-hero-left-color;
   height: 72rem;
   width: 72rem;
   @include center-flex;
 
   &--with-bg {
-    background-color: $freeguide-hero-left-bg-color;
+    background-color: $freeguide-hero-right-bg-color;
   }
 
   &__inner {
@@ -24,6 +23,7 @@
       font-size: $fs-xs;
       font-weight: $fw-bold;
       height: 9.6rem;
+      color: $text-inverted;
       position: absolute;
       right: -3.3rem;
       top: -3.3rem;
@@ -33,8 +33,6 @@
   }
 
   &__heading {
-    font-size: $h-2-font-size;
-    font-weight: $h-2-font-weight;
     line-height: 1.3;
     margin: map.get($spacing, 'xl') map.get($spacing, 'xl');
     position: relative;
@@ -63,20 +61,16 @@
     z-index: 20;
   }
 
+  &__text-box {
+    display: flex;
+    gap: map.get($spacing, 'xxs');
+    flex-direction: column;
+  }
+
   &__icon-wrapper {
     border-radius: $br-full;
     height: 3.4rem;
     width: 3.4rem;
     @include center-flex;
-  }
-
-  &__message-heading {
-    font-size: $fs-xs;
-    font-weight: $fw-bold;
-  }
-
-  &__message-text {
-    font-size: $fs-xxs;
-    margin-top: map.get($spacing, 'xxs');
   }
 }

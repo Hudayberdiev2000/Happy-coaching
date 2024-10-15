@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './ServiceCart.module.scss';
 import Image from 'next/image';
 import clsx from 'clsx';
+import Text from '@/components/Atoms/Text';
 
 interface ServiceCartProps {
   iconUrl: string;
@@ -32,9 +33,17 @@ const ServiceCart: React.FC<ServiceCartProps> = ({
         />
       </div>
 
-      <h4 className={styles['service-cart__heading']}>{heading}</h4>
+      <Text variant="headingSm" className={styles['service-cart__heading']}>
+        {heading}
+      </Text>
 
-      <p className={styles['service-cart__description']}>{description}</p>
+      <Text
+        tone="secondary"
+        variant="bodySm"
+        className={styles['service-cart__description']}
+      >
+        {description}
+      </Text>
     </div>
   );
 };

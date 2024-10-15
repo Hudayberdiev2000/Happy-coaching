@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React from 'react';
 import styles from './ReviewCard.module.scss';
 import Stars from '@/components/Atoms/Stars';
+import Text from '@/components/Atoms/Text';
 
 interface ReviewCardProps {
   commenter: string;
@@ -21,10 +22,22 @@ const ReviewCard: React.FC<ReviewCardProps> = ({
   return (
     <div className={styles['review-card']}>
       {style === 'numbered' && (
-        <p className={styles['review-card__rating-number']}>{`5/${rating}`}</p>
+        <Text
+          tone="subtle"
+          variant="headingLg"
+          className={styles['review-card__rating-number']}
+        >{`5/${rating}`}</Text>
       )}
-      <p className={styles['review-card__comment']}>{`"${comment}"`}</p>
-      <p className={styles['review-card__commenter-name']}>{commenter}</p>
+      <Text
+        variant="bodyXl"
+        className={styles['review-card__comment']}
+      >{`"${comment}"`}</Text>
+      <Text
+        variant="headingSm"
+        className={styles['review-card__commenter-name']}
+      >
+        {commenter}
+      </Text>
       <div className={styles['review-card__img-wrapper']}>
         <Image
           className={styles['review-card__img']}

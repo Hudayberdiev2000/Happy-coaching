@@ -2,13 +2,18 @@ import React from 'react';
 import styles from './AboutReviewSection.module.scss';
 import ReviewCard from '@/components/Molecules/ReviewCard';
 import { Reviews as reviews } from '../../../../data';
+import Text from '@/components/Atoms/Text';
 
 const AboutReviewSection: React.FC = () => {
   return (
     <section className={styles['review']}>
-      <h2 className={styles['review__heading']}>
+      <Text
+        variant="headingLg"
+        tone="primary"
+        className={styles['review__heading']}
+      >
         Hear out what my clients say about me.
-      </h2>
+      </Text>
       <div className={styles['review__cards']}>
         {reviews.slice(0, 3).map(review => (
           <ReviewCard

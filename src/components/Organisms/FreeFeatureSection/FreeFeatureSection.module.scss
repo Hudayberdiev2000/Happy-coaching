@@ -8,6 +8,7 @@
 
     &__container {
       @include padding('top', 'xxxl');
+      align-items: start;
 
       display: grid;
       grid-template-columns: repeat(2, 1fr);

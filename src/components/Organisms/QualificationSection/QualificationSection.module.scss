@@ -15,16 +15,8 @@
     gap: map.get($spacing, 'xxs');
   }
 
-  &__upheading {
-    color: $qualification-section-upheading-color;
-    font-size: $fs-sm;
-  }
-
   &__heading {
-    color: $heading-color;
-    font-size: $h-2-font-size;
-    font-weight: $h-2-font-weight;
-    letter-spacing: -2%;
+    letter-spacing: $ls-md;
     line-height: 5.8rem;
     max-width: 48.8rem;
   }

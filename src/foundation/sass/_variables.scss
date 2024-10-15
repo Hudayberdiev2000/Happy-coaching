@@ -27,17 +27,8 @@
 =                  Colors                     =
 ============================================= */
 
-/* Text colors */
-// $gray-100: #e0e2e8;
-// $gray-200: #d2d7da;
-// $gray-300: #b4b7bf;
-// $gray-400: #667085;
-// $gray-500: #4a556c;
-// $gray-600: #475467;
-// $gray-900: #101828;
-
 /* Primary color */
-$primary-400: #29d7bb;
+$primary-400: #28d7ba;
 $primary-500: #29ad96;
 
 /* Secondary color */
@@ -84,13 +75,13 @@ $text-inverted: $white;
 ============================================= */
 
 /**
- *
- * 1) The playfair font. We'll use this for headings mostly.
- *     https://fonts.google.com/specimen/Playfair+Display
- *
- * 2) The raleway font. We'll use this for the body text.
- *     https://fonts.google.com/specimen/Raleway
- */
+*
+* 1) The playfair font. We'll use this for headings mostly.
+*     https://fonts.google.com/specimen/Playfair+Display
+*
+* 2) The raleway font. We'll use this for the body text.
+*     https://fonts.google.com/specimen/Raleway
+*/
 
 /* Font families  'Playfair Display', */
 
@@ -139,7 +130,9 @@ $h-6: 1.6rem; // 16px
 
 /* Line heights */
 $lh-xs: 1.2;
-$lh-md: 1.8;
+$lh-sm: 1.3;
+$lh-md: 1.5;
+$lh-lg: 1.8;
 
 /* Letter spacing */
 $ls-sm: -3%;
@@ -158,8 +151,8 @@ $fw-black: 900;
 /* =====  End of Typography  ====== */
 
 /* =============================================
-=            Breakpoints                      =
-============================================= */
+  =            Breakpoints                      =
+  ============================================= */
 
 $breakpoints: (
   md: 76.8rem,
@@ -173,8 +166,8 @@ $breakpoints: (
 /* =====  End of Breakpoints  ====== */
 
 /* =============================================
-=            Spacing                          =
-============================================= */
+    =            Spacing                          =
+    ============================================= */
 
 $spacing: (
   xxxs: 0.4rem,
@@ -204,3 +197,12 @@ $br-sm: 4px;
 $br-md: 10px;
 $br-lg: 25px;
 $br-full: 9999px;
+
+/* Text colors */
+// $gray-100: #e0e2e8;
+// $gray-200: #d2d7da;
+// $gray-300: #b4b7bf;
+// $gray-400: #667085;
+// $gray-500: #4a556c;
+// $gray-600: #475467;
+// $gray-900: #101828;

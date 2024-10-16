@@ -38,6 +38,12 @@
   padding-#{$direction}: map.get($spacing, $size);
 }
 
+@mixin mobile {
+  @media (min-width: map.get($breakpoints, 'sm')) {
+    @content;
+  }
+}
+
 @mixin tablet {
   @media (min-width: map.get($breakpoints, 'md')) {
     @content;

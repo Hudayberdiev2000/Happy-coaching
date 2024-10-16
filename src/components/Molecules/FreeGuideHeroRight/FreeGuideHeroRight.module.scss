@@ -2,8 +2,8 @@
 @import '../../../foundation/sass/all';
 
 .hero-right {
-  height: 72rem;
-  width: 72rem;
+  min-height: 72rem;
+  max-width: 72rem;
   @include center-flex;
 
   &--with-bg {
@@ -12,6 +12,7 @@
 
   &__inner {
     background-color: $freeguide-hero-left-inner-bg-color;
+
     height: 58.1rem;
     position: relative;
     width: 44.6rem;

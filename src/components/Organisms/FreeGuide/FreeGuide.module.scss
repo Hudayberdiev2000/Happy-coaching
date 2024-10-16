@@ -3,6 +3,7 @@
 .free-guide {
   height: 87.8rem;
   @include center-flex;
+  // padding: 0 15px 0 15px;
 
   &__container {
     display: grid;

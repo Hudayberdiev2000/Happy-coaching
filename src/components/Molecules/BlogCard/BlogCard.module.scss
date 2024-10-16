@@ -3,8 +3,8 @@
 
 .blog-card {
   border: 1px solid $blog-card-border-color;
-  height: 37.6rem;
-  width: 36rem;
+  min-height: 37.6rem;
+  max-width: 36rem;
 
   &__img-wrapper {
     height: 15.6rem;

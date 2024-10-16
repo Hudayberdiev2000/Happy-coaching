@@ -56,11 +56,29 @@
   &--headingLg {
     font-size: $h-2-font-size;
     font-weight: $h-2-font-weight;
+    // @include mobile {
+    //   font-size: $h-3-font-size;
+    //   font-weight: $h-3-font-weight;
+    // }
+
+    // @include laptop {
+    //   font-size: $h-2-font-size;
+    //   font-weight: $h-2-font-weight;
+    // }
   }
 
   &--headingXl {
     font-size: $h-1-font-size;
     font-weight: $h-1-font-weight;
+    // @include mobile {
+    //   font-size: $h-2-font-size;
+    //   font-weight: $h-2-font-weight;
+    // }
+
+    // @include laptop {
+    //   font-size: $h-1-font-size;
+    //   font-weight: $h-1-font-weight;
+    // }
   }
 
   &--body2xs {
@@ -73,14 +91,35 @@
 
   &--bodySm {
     font-size: $fs-sm;
+    // @include mobile {
+    //   font-size: $fs-xs;
+    // }
+
+    // @include laptop {
+    //   font-size: $fs-sm;
+    // }
   }
 
   &--bodyMd {
     font-size: $fs-md;
+    // @include mobile {
+    //   font-size: $fs-sm;
+    // }
+
+    // @include laptop {
+    //   font-size: $fs-md;
+    // }
   }
 
   &--bodyLg {
-    font-size: $fs-lg;
+    // font-size: $fs-lg;
+    @include mobile {
+      font-size: $fs-md;
+    }
+
+    @include laptop {
+      font-size: $fs-lg;
+    }
   }
 
   &--bodyXl {

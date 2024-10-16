@@ -7,8 +7,15 @@
   &__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 66.7rem;
+
     position: relative;
+
+    @include tablet {
+      height: 60rem;
+    }
+    @include laptop {
+      height: 66.7rem;
+    }
   }
 
   &__wave-icon {

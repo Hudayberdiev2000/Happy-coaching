@@ -5,9 +5,9 @@
   $this: &;
 
   cursor: pointer;
-  height: 32.8rem;
+  min-height: 32.8rem;
   padding: map.get($spacing, 'lg');
-  width: 38rem;
+  max-width: 38rem;
 
   &--with-border {
     border: 1px solid $service-cart-border-color;

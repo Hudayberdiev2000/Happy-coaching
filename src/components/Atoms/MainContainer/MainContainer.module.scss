@@ -1,7 +1,10 @@
+@use 'sass:map';
 @import '../../../foundation/sass/all';
 
 .main-container {
   height: 100%;
   margin: 0 auto;
   max-width: 128rem;
+  padding: 0 map.get($spacing, 'sm') 0 map.get($spacing, 'sm');
+  // background-color: orange;
 }

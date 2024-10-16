@@ -3,12 +3,12 @@
 
 .card {
   background-color: $qualification-card-primary-bg-color;
-  height: 54rem;
-  padding: map.get($spacing, 'xl');
-  width: 44.6rem;
   display: flex;
   flex-direction: column;
   gap: map.get($spacing, 'xxl');
+  height: 54rem;
+  padding: map.get($spacing, 'xl');
+  width: 44.6rem;
 
   &--secondary {
     background-color: transparent;

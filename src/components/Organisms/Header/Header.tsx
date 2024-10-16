@@ -7,11 +7,9 @@ import Navbar from '@/components/Molecules/Navbar';
 import Link from 'next/link';
 import Button from '@/components/Atoms/Button';
 import Image from 'next/image';
+import DarkModeButton from '@/components/Atoms/DarkModeButton';
 
 const Header: React.FC = () => {
-  const handleButtonClick = () => {
-    document.documentElement.classList.toggle('dark-mode');
-  };
   return (
     <header className={styles.header}>
       <MainContainer className={styles['header__container']}>
@@ -24,18 +22,7 @@ const Header: React.FC = () => {
             <Button>Get your free guide</Button>
           </Link>
 
-          <button
-            onClick={handleButtonClick}
-            className={styles['header__dark-mode-button']}
-          >
-            <Image
-              className={styles['header__dark-mode-icon']}
-              height={30}
-              width={30}
-              src={'/icons/mode-dark.svg'}
-              alt="moon"
-            />
-          </button>
+          <DarkModeButton />
         </div>
       </MainContainer>
     </header>

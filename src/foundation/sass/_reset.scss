@@ -113,10 +113,14 @@ section {
   display: none;
 }
 
+* {
+  transition: background-color 0.3s ease;
+}
+
 body {
+  background-color: var(--body-background-color);
   font-family: sans-serif;
   line-height: 1;
-  background-color: var(--body-background-color);
 }
 
 menu,
@@ -163,7 +167,7 @@ html {
   --border-blue: #{$blue};
   --border-gray: #{$secondary-300};
 
-  /* Text colors*/
+  /* Text colors */
   --text-primary: #{$secondary-500};
   --text-secondary: #{$secondary-400};
   --text-subtle: #{$secondary-300};
@@ -173,15 +177,17 @@ html {
 }
 
 .dark-mode {
-  /* Background colors*/
+  /* Background colors */
   --body-background-color: #454545;
   --background-white: #454545;
   --background-floral: #595858;
 
-  /* Border colors*/
+  /* Border colors */
   --border-floral: #888;
+  --border-gray: #888;
+  --border-smoke: #888;
 
-  /* Text colors*/
+  /* Text colors */
   --text-primary: #f3f3f3;
   --text-secondary: #d2d2d2;
   --text-subtle: #a6a6a6;

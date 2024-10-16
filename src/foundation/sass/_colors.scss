@@ -57,6 +57,7 @@ $service-cart-heading-hover-color: var(--text-primary) !default;
 =                 Introduction                 =
 ============================================= */
 $introduction-bg-color: var(--background-floral) !default;
+
 /* =============================================
 =                 ReviewCard                   =
 ============================================= */
@@ -194,3 +195,9 @@ $text-subtle-color: var(--text-subtle) !default;
 $text-error-color: var(--text-error) !default;
 $text-success-color: var(--text-success) !default;
 $text-inverted-color: var(--text-inverted) !default;
+
+/* =============================================
+=                DarkModeButton                =
+============================================= */
+$dark-mode-button-stroke-color: var(--text-primary);
+$dark-mode-button-bg-color: var(--background-floral);

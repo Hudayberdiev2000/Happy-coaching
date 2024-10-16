@@ -21,8 +21,8 @@
     @include padding('top', 'sm');
     @include padding('bottom', 'xxl');
 
-    gap: map.get($spacing, 'lg') map.get($spacing, 'xl');
     display: grid;
+    gap: map.get($spacing, 'lg') map.get($spacing, 'xl');
     grid-template-columns: repeat(2, 1fr);
   }
 

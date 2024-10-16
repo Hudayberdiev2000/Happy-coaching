@@ -19,11 +19,11 @@
     &:after {
       background-color: $freeguide-hero-after-bg-color;
       border-radius: $br-full;
+      color: $text-inverted-color;
       content: 'Free guide!';
       font-size: $fs-xs;
       font-weight: $fw-bold;
       height: 9.6rem;
-      color: $text-inverted-color;
       position: absolute;
       right: -3.3rem;
       top: -3.3rem;
@@ -63,8 +63,8 @@
 
   &__text-box {
     display: flex;
-    gap: map.get($spacing, 'xxs');
     flex-direction: column;
+    gap: map.get($spacing, 'xxs');
   }
 
   &__icon-wrapper {

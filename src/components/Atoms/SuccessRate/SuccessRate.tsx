@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './SuccessRate.module.scss';
 import Image from 'next/image';
+import Text from '../Text';
 
 const SuccessRate: React.FC = () => {
   return (
@@ -59,9 +60,13 @@ const SuccessRate: React.FC = () => {
       </div>
       <div className={styles['success-rate__info-box']}>
         <p className={styles['success-rate__percentage']}>100%</p>
-        <p className={styles['success-rate__desciption']}>
+        <Text
+          tone="secondary"
+          variant="body2xs"
+          className={styles['success-rate__desciption']}
+        >
           Success rate this year
-        </p>
+        </Text>
       </div>
     </div>
   );
